@@ -137,21 +137,22 @@ def gpu_memory_mb() -> dict:
         Values are memory usage as integers in MB.
         Returns an empty ``dict`` if GPUs are not available.
     """
+    return {}
     # pylint: disable=bare-except
-    try:
-        result = subprocess.check_output(['nvidia-smi', '--query-gpu=memory.used',
-                                          '--format=csv,nounits,noheader'],
-                                         encoding='utf-8')
-        gpu_memory = [int(x) for x in result.strip().split('\n')]
-        return {gpu: memory for gpu, memory in enumerate(gpu_memory)}
-    except FileNotFoundError:
-        # `nvidia-smi` doesn't exist, assume that means no GPU.
-        return {}
-    except:
-        # Catch *all* exceptions, because this memory check is a nice-to-have
-        # and we'd never want a training run to fail because of it.
-        logger.exception("unable to check gpu_memory_mb(), continuing")
-        return {}
+    #try:
+    #    result = subprocess.check_output(['nvidia-smi', '--query-gpu=memory.used',
+    #                                      '--format=csv,nounits,noheader'],
+    #                                     encoding='utf-8')
+    #    gpu_memory = [int(x) for x in result.strip().split('\n')]
+    #    return {gpu: memory for gpu, memory in enumerate(gpu_memory)}
+    #except FileNotFoundError:
+    #    # `nvidia-smi` doesn't exist, assume that means no GPU.
+    #    return {}
+    #except:
+    #    # Catch *all* exceptions, because this memory check is a nice-to-have
+    #    # and we'd never want a training run to fail because of it.
+    #    logger.exception("unable to check gpu_memory_mb(), continuing")
+    #    return {}
 
 
 def get_frozen_and_tunable_parameter_names(model: torch.nn.Module):

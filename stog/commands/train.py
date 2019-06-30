@@ -83,12 +83,13 @@ def train_model(params: Params):
     environment.set_seed(environment_params)
     create_serialization_dir(params)
     environment.prepare_global_logging(environment_params)
-    environment.check_for_gpu(environment_params)
-    if environment_params['gpu']:
-        device = torch.device('cuda:{}'.format(environment_params['cuda_device']))
-        environment.occupy_gpu(device)
-    else:
-        device = torch.device('cpu')
+    #environment.check_for_gpu(environment_params)
+    #if environment_params['gpu']:
+    #    device = torch.device('cuda:{}'.format(environment_params['cuda_device']))
+    #    environment.occupy_gpu(device)
+    #else:
+    #    device = torch.device('cpu')
+    device = torch.device('cpu')
     params['trainer']['device'] = device
 
     # Load data.

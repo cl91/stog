@@ -1,0 +1,2588 @@
+# ::id lpp_1943.1 ::date 2012-06-07T17:06:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 1 .
+# ::tokens ["Chapter", "1", "."]
+# ::lemmas ["chapter", "1", "."]
+# ::pos_tags ["NN", "CD", "."]
+# ::ner_tags ["O", "NUMBER", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "1", "value": 1}}
+# ::save-date Thu Jun 7, 2012 ::file lpp_1943_1.txt
+(c / chapter
+      :mod 1)
+
+# ::id lpp_1943.2 ::date 2012-06-07T17:06:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
+# ::tokens ["Once", "when", "I", "was", "1", "years", "old", "I", "saw", "a", "magnificent", "picture", "in", "a", "book", ",", "called", "ENTITY_1", ",", "about", "the", "primeval", "forest", "."]
+# ::lemmas ["once", "when", "I", "be", "1", "year", "old", "I", "see", "a", "magnificent", "picture", "in", "a", "book", ",", "call", "ENTITY_1", ",", "about", "the", "primeval", "forest", "."]
+# ::pos_tags ["RB", "WRB", "PRP", "VBD", "CD", "NNS", "JJ", "PRP", "VBD", "DT", "JJ", "NN", "IN", "DT", "NN", ",", "VBN", "NNP", ",", "IN", "DT", "JJ", "NN", "."]
+# ::ner_tags ["DATE", "O", "O", "O", "NUMBER", "DURATION", "DURATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "ENTITY", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"ENTITY_1": {"type": "named-entity", "span": "True Stories from Nature", "ops": "True Stories from Nature"}, "1": {"type": "quantity", "span": "six", "value": 6}}
+# ::save-date Mon May 13, 2013 ::file lpp_1943_2.txt
+(s / see
+      :ARG0 (i / i)
+      :ARG1 (p / picture
+            :location (b2 / book
+                  :name (n / ENTITY_1)
+                  :topic (f / forest
+                        :mod (p2 / primeval)))
+            :mod (m / magnificent))
+      :mod (o / once)
+      :time (a / age-01
+            :ARG1 i
+            :ARG2 (t / temporal-quantity
+                  :quant 1
+                  :unit (y / year))))
+
+# ::id lpp_1943.3 ::date 2012-06-07T17:06:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a picture of a boa constrictor in the act of swallowing an animal .
+# ::tokens ["It", "was", "a", "picture", "of", "a", "boa", "constrictor", "in", "the", "act", "of", "swallowing", "an", "animal", "."]
+# ::lemmas ["it", "be", "a", "picture", "of", "a", "boa", "constrictor", "in", "the", "act", "of", "swallow", "a", "animal", "."]
+# ::pos_tags ["PRP", "VBD", "DT", "NN", "IN", "DT", "NN", "NN", "IN", "DT", "NN", "IN", "VBG", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_3.txt
+(p / picture
+      :domain (i / it)
+      :topic (b2 / boa
+            :ARG0-of (s / swallow-01
+                  :ARG1 (a / animal))
+            :mod (c2 / constrictor)))
+
+# ::id lpp_1943.4 ::date 2012-06-07T17:06:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Here is a copy of the drawing .
+# ::tokens ["Here", "is", "a", "copy", "of", "the", "drawing", "."]
+# ::lemmas ["here", "be", "a", "copy", "of", "the", "drawing", "."]
+# ::pos_tags ["RB", "VBZ", "DT", "NN", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_4.txt
+(b / be-located-at
+      :ARG1 (t2 / thing
+            :ARG2-of (c / copy
+                  :ARG1 (p / picture
+                        :ARG1-of (d / draw-01))))
+      :ARG2 (h / here))
+
+# ::id lpp_1943.5 ::date 2012-06-07T17:06:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
+# ::tokens ["In", "the", "book", "it", "said", ":", "''", "Boa", "constrictors", "swallow", "their", "prey", "whole", ",", "without", "chewing", "it", "."]
+# ::lemmas ["in", "the", "book", "it", "say", ":", "''", "boa", "constrictor", "swallow", "they", "prey", "whole", ",", "without", "chew", "it", "."]
+# ::pos_tags ["IN", "DT", "NN", "PRP", "VBD", ":", "''", "NN", "NNS", "VBP", "PRP$", "NN", "NN", ",", "IN", "VBG", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Sep 6, 2013 ::file lpp_1943_5.txt
+(s2 / say
+      :ARG0 (b2 / book)
+      :ARG1 (s / swallow-01
+            :ARG0 (b / boa
+                  :mod (c / constrictor))
+            :ARG1 (p / prey
+                  :mod (w / whole)
+                  :poss b)
+            :manner (c2 / chew
+                  :ARG0 b
+                  :ARG1 p)))
+
+# ::id lpp_1943.6 ::date 2012-06-07T17:06:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt After that they are not able to move , and they sleep through the six months that they need for digestion . "
+# ::tokens ["After", "that", "they", "are", "not", "able", "to", "move", ",", "and", "they", "sleep", "through", "the", "1", "months", "that", "they", "need", "for", "digestion", ".", "''"]
+# ::lemmas ["after", "that", "they", "be", "not", "able", "to", "move", ",", "and", "they", "sleep", "through", "the", "1", "month", "that", "they", "need", "for", "digestion", ".", "''"]
+# ::pos_tags ["IN", "DT", "PRP", "VBP", "RB", "JJ", "TO", "VB", ",", "CC", "PRP", "VBP", "IN", "DT", "CD", "NNS", "IN", "PRP", "VBP", "IN", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DURATION", "NUMBER", "DURATION", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "six", "value": 6}}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_6.txt
+(a / and
+      :op1 (p / possible
+            :ARG1 (m / move-01
+                  :ARG0 (t / they)
+                  :time (a2 / after
+                        :op1 (t3 / that))))
+      :op2 (s / sleep
+            :ARG0 t
+            :duration (t2 / temporal-quantity
+                  :ARG1-of (n / need
+                        :ARG0 t
+                        :purpose (d / digest
+                              :ARG0 t))
+                  :quant 1
+                  :unit (m2 / month))))
+
+# ::id lpp_1943.7 ::date 2012-06-07T17:06:38 ::annotator ISI-AMR-05 ::preferred
+# ::snt I pondered deeply , then , over the adventures of the jungle .
+# ::tokens ["I", "pondered", "deeply", ",", "then", ",", "over", "the", "adventures", "of", "the", "jungle", "."]
+# ::lemmas ["I", "ponder", "deeply", ",", "then", ",", "over", "the", "adventure", "of", "the", "jungle", "."]
+# ::pos_tags ["PRP", "VBD", "RB", ",", "RB", ",", "IN", "DT", "NNS", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_7.txt
+(p / ponder
+      :ARG0 (i / i)
+      :ARG1 (a / adventure
+            :location (j / jungle))
+      :ARG1-of (d / deep-02)
+      :time (t / then))
+
+# ::id lpp_1943.8 ::date 2012-06-07T17:06:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt And after some work with a colored pencil I succeeded in making my first drawing .
+# ::tokens ["And", "after", "some", "work", "with", "a", "colored", "pencil", "I", "succeeded", "in", "making", "my", "ORDINAL_ENTITY_1", "drawing", "."]
+# ::lemmas ["and", "after", "some", "work", "with", "a", "color", "pencil", "I", "succeed", "in", "make", "my", "ORDINAL_ENTITY_1", "drawing", "."]
+# ::pos_tags ["CC", "IN", "DT", "NN", "IN", "DT", "VBN", "NN", "PRP", "VBD", "IN", "VBG", "PRP$", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "ORDINAL_ENTITY", "O", "O"]
+# ::abstract_map {"ORDINAL_ENTITY_1": {"type": "ordinal-entity", "span": "1", "ops": ["1"]}}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_8.txt
+(a2 / and
+      :op2 (s / succeed
+            :ARG0 (i / i)
+            :ARG1 (m / make-01
+                  :ARG0 i
+                  :ARG1 (p2 / picture
+                        :ARG1-of (d / draw-01
+                              :ARG0 i
+                              :ord (o / ORDINAL_ENTITY_1))))
+            :time (a / after
+                  :op1 (w / work-01
+                        :ARG0 i
+                        :instrument (p / pencil
+                              :mod (c / color))
+                        :mod (s2 / some)))))
+
+# ::id lpp_1943.9 ::date 2012-06-07T17:06:44 ::annotator ISI-AMR-05 ::preferred
+# ::snt My Drawing Number One .
+# ::tokens ["My", "ENTITY_1", "."]
+# ::lemmas ["my", "ENTITY_1", "."]
+# ::pos_tags ["PRP$", "NNP", "."]
+# ::ner_tags ["O", "ENTITY", "O"]
+# ::abstract_map {"ENTITY_1": {"type": "named-entity", "span": "Drawing Number One", "ops": "Drawing Number One"}}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_9.txt
+(p / picture
+      :name (n2 / ENTITY_1)
+      :poss (i / i))
+
+# ::id lpp_1943.10 ::date 2012-06-07T17:06:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt It looked like this : I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
+# ::tokens ["It", "looked", "like", "this", ":", "I", "showed", "my", "masterpiece", "to", "the", "grown", "-", "ups", ",", "and", "asked", "them", "whether", "the", "drawing", "frightened", "them", "."]
+# ::lemmas ["it", "look", "like", "this", ":", "I", "show", "my", "masterpiece", "to", "the", "grown", "-", "up", ",", "and", "ask", "they", "whether", "the", "drawing", "frighten", "they", "."]
+# ::pos_tags ["PRP", "VBD", "IN", "DT", ":", "PRP", "VBD", "PRP$", "NN", "TO", "DT", "JJ", ":", "NNS", ",", "CC", "VBD", "PRP", "IN", "DT", "NN", "VBD", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_10.txt
+(a / and
+      :op1 (l / look-02
+            :ARG0 (i / it)
+            :ARG1 (t / this))
+      :op2 (s / show-01
+            :ARG0 (i2 / i)
+            :ARG1 (m / masterpiece
+                  :poss i2)
+            :ARG2 (g / grown-up))
+      :op3 (a2 / ask
+            :ARG0 i2
+            :ARG1 (f / frighten
+                  :ARG0 (p / picture
+                        :ARG1-of (d / draw-01))
+                  :ARG1 g
+                  :mode interrogative)
+            :ARG2 g))
+
+# ::id lpp_1943.11 ::date 2012-06-07T17:41:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt But they answered : " Frighten ?
+# ::tokens ["But", "they", "answered", ":", "''", "Frighten", "?"]
+# ::lemmas ["but", "they", "answer", ":", "''", "frighten", "?"]
+# ::pos_tags ["CC", "PRP", "VBD", ":", "''", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_11.txt
+(c / contrast
+      :ARG2 (a / answer-01
+            :ARG0 (t / they)
+            :ARG2 (f / frighten
+                  :mode interrogative)))
+
+# ::id lpp_1943.12 ::date 2012-06-07T17:42:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt Why should any one be frightened by a hat ? "
+# ::tokens ["Why", "should", "any", "one", "be", "frightened", "by", "a", "hat", "?", "''"]
+# ::lemmas ["why", "should", "any", "one", "be", "frighten", "by", "a", "hat", "?", "''"]
+# ::pos_tags ["WRB", "MD", "DT", "CD", "VB", "VBN", "IN", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_12.txt
+(f / frighten
+      :ARG0 (h / hat)
+      :ARG1 (o / one
+            :mod (a / any))
+      :ARG1-of (c / cause-01
+            :ARG0 (a2 / amr-unknown)))
+
+# ::id lpp_1943.13 ::date 2012-06-07T17:45:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt My drawing was not a picture of a hat .
+# ::tokens ["My", "drawing", "was", "not", "a", "picture", "of", "a", "hat", "."]
+# ::lemmas ["my", "drawing", "be", "not", "a", "picture", "of", "a", "hat", "."]
+# ::pos_tags ["PRP$", "NN", "VBD", "RB", "DT", "NN", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_13.txt
+(p / picture-01
+      :ARG0 (p2 / picture
+            :ARG1-of (d / draw-01
+                  :ARG0 (i / i)))
+      :ARG1 (h / hat))
+
+# ::id lpp_1943.14 ::date 2012-06-07T17:46:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a picture of a boa constrictor digesting an elephant .
+# ::tokens ["It", "was", "a", "picture", "of", "a", "boa", "constrictor", "digesting", "an", "elephant", "."]
+# ::lemmas ["it", "be", "a", "picture", "of", "a", "boa", "constrictor", "digest", "a", "elephant", "."]
+# ::pos_tags ["PRP", "VBD", "DT", "NN", "IN", "DT", "NN", "NN", "VBG", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_14.txt
+(p / picture-01
+      :ARG0 (i / it)
+      :ARG1 (b2 / boa
+            :ARG0-of (d / digest
+                  :ARG1 (e / elephant))
+            :mod (c / constrictor)))
+
+# ::id lpp_1943.15 ::date 2012-06-07T17:46:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt But since the grown - ups were not able to understand it , I made another drawing : I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
+# ::tokens ["But", "since", "the", "grown", "-", "ups", "were", "not", "able", "to", "understand", "it", ",", "I", "made", "another", "drawing", ":", "I", "drew", "the", "inside", "of", "the", "boa", "constrictor", ",", "so", "that", "the", "grown", "-", "ups", "could", "see", "it", "clearly", "."]
+# ::lemmas ["but", "since", "the", "grown", "-", "up", "be", "not", "able", "to", "understand", "it", ",", "I", "make", "another", "drawing", ":", "I", "draw", "the", "inside", "of", "the", "boa", "constrictor", ",", "so", "that", "the", "grown", "-", "up", "could", "see", "it", "clearly", "."]
+# ::pos_tags ["CC", "IN", "DT", "JJ", ":", "NNS", "VBD", "RB", "JJ", "TO", "VB", "PRP", ",", "PRP", "VBD", "DT", "NN", ":", "PRP", "VBD", "DT", "NN", "IN", "DT", "NN", "NN", ",", "RB", "IN", "DT", "JJ", ":", "NNS", "MD", "VB", "PRP", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri May 29, 2015 ::file lpp_1943_15.txt
+(c / contrast
+      :ARG2 (a2 / and
+            :op1 (d3 / draw-01
+                  :ARG0 (i / i)
+                  :ARG1 (p2 / picture
+                        :mod (a / another))
+                  :ARG1-of (c3 / cause-01
+                        :ARG0 (p3 / possible
+                              :ARG1 (u / understand
+                                    :ARG0 (g / grown-up)
+                                    :ARG1 (i2 / it)))))
+            :op2 (d / draw-01
+                  :ARG0 i
+                  :ARG1 (i3 / inside
+                        :part-of (b2 / boa
+                              :mod (c4 / constrictor)))
+                  :purpose (p / possible
+                        :ARG1 (s / see
+                              :ARG0 g
+                              :ARG1 (i4 / it)
+                              :ARG1-of (c2 / clear-06))))))
+
+# ::id lpp_1943.16 ::date 2012-06-08T13:12:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt They always need to have things explained .
+# ::tokens ["They", "always", "need", "to", "have", "things", "explained", "."]
+# ::lemmas ["they", "always", "need", "to", "have", "thing", "explain", "."]
+# ::pos_tags ["PRP", "RB", "VBP", "TO", "VB", "NNS", "VBN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_16.txt
+(n / need
+      :ARG0 (t / they)
+      :ARG1 (e / explain)
+      :time (a / always))
+
+# ::id lpp_1943.17 ::date 2012-06-08T13:12:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
+# ::tokens ["My", "ENTITY_1", "looked", "like", "this", ":", "The", "grown-ups", "'", "response", ",", "this", "time", ",", "was", "to", "advise", "me", "to", "lay", "aside", "my", "drawings", "of", "boa", "constrictors", ",", "whether", "from", "the", "inside", "or", "the", "outside", ",", "and", "devote", "myself", "instead", "to", "geography", ",", "history", ",", "arithmetic", "and", "grammar", "."]
+# ::lemmas ["my", "ENTITY_1", "look", "like", "this", ":", "the", "grow-up", "'", "response", ",", "this", "time", ",", "be", "to", "advise", "I", "to", "lay", "aside", "my", "drawing", "of", "boa", "constrictor", ",", "whether", "from", "the", "inside", "or", "the", "outside", ",", "and", "devote", "myself", "instead", "to", "geography", ",", "history", ",", "arithmetic", "and", "grammar", "."]
+# ::pos_tags ["PRP$", "NNP", "VBD", "IN", "DT", ":", "DT", "COMP", "POS", "NN", ",", "DT", "NN", ",", "VBD", "TO", "VB", "PRP", "TO", "VB", "RB", "PRP$", "NNS", "IN", "NN", "NNS", ",", "IN", "IN", "DT", "NN", "CC", "DT", "JJ", ",", "CC", "VBP", "PRP", "RB", "TO", "NN", ",", "NN", ",", "NN", "CC", "NN", "."]
+# ::ner_tags ["O", "ENTITY", "O", "O", "O", "O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"ENTITY_1": {"type": "named-entity", "span": "Drawing Number Two", "ops": "Drawing Number Two"}}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_17.txt
+(a6 / and
+      :op1 (l / look-02
+            :ARG0 (p / picture
+                  :name (n / ENTITY_1)
+                  :poss (i / i))
+            :ARG1 (t2 / this))
+      :op2 (r / respond
+            :ARG0 (g / grown-up)
+            :ARG1 i
+            :ARG2 (a / advise
+                  :ARG0 g
+                  :ARG1 i
+                  :ARG2 (a3 / and
+                        :op1 (l2 / lay-01
+                              :ARG0 i
+                              :ARG1 (p2 / picture
+                                    :ARG1-of (d2 / draw-01
+                                          :ARG0 i)
+                                    :topic (b2 / boa
+                                          :mod (c2 / constrictor)
+                                          :mod (o / or
+                                                :op1 (i2 / inside)
+                                                :op2 (o2 / outside))))
+                              :ARG2 (a2 / aside))
+                        :op2 (d3 / devote
+                              :ARG0 i
+                              :ARG1 i
+                              :ARG1-of (i4 / instead-of
+                                    :ARG2 d2)
+                              :ARG2 (a4 / and
+                                    :op1 (g2 / geography)
+                                    :op2 (h / history)
+                                    :op3 (a5 / arithmetic)
+                                    :op4 (g3 / grammar)))))
+            :time (t4 / time
+                  :mod (t5 / this))))
+
+# ::id lpp_1943.18 ::date 2012-06-08T13:18:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
+# ::tokens ["That", "is", "why", ",", "at", "the", "age", "of", "1", ",", "I", "gave-up", "what", "might", "have", "been", "a", "magnificent", "career", "as", "a", "painter", "."]
+# ::lemmas ["that", "be", "why", ",", "at", "the", "age", "of", "1", ",", "I", "give-up", "what", "might", "have", "be", "a", "magnificent", "career", "as", "a", "painter", "."]
+# ::pos_tags ["DT", "VBZ", "WRB", ",", "IN", "DT", "NN", "IN", "CD", ",", "PRP", "COMP", "WP", "MD", "VB", "VBN", "DT", "JJ", "NN", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "six", "value": 6}}
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_18.txt
+(c2 / cause-01
+      :ARG0 (t2 / that)
+      :ARG1 (g / give-up
+            :ARG0 (i / i)
+            :ARG1 (c / career
+                  :mod (m / magnificent)
+                  :topic (p / person
+                        :ARG0-of (p2 / paint-02)))
+            :time (a / age-01
+                  :ARG1 i
+                  :ARG2 (t / temporal-quantity
+                        :quant 1
+                        :unit (y / year)))))
+
+# ::id lpp_1943.19 ::date 2012-06-09T11:31:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
+# ::tokens ["I", "had", "been", "disheartened", "by-the", "failure", "of", "my", "ENTITY_1", "and", "my", "ENTITY_2", "."]
+# ::lemmas ["I", "have", "be", "dishearten", "by-the", "failure", "of", "my", "ENTITY_1", "and", "my", "ENTITY_2", "."]
+# ::pos_tags ["PRP", "VBD", "VBN", "VBN", "COMP", "NN", "IN", "PRP$", "NNP", "CC", "PRP$", "NNP", "."]
+# ::ner_tags ["O", "O", "O", "O", "0", "O", "O", "O", "ENTITY", "O", "O", "ENTITY", "O"]
+# ::abstract_map {"ENTITY_1": {"type": "named-entity", "span": "Drawing Number One", "ops": "Drawing Number One"}, "ENTITY_2": {"type": "named-entity", "span": "Drawing Number Two", "ops": "Drawing Number Two"}}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_19.txt
+(d / dishearten
+      :ARG0 (f / fail
+            :ARG1 (a / and
+                  :op1 (p / picture
+                        :name (n / ENTITY_1))
+                  :op2 (p2 / picture
+                        :name (n2 / ENTITY_2))
+                  :poss (i / i)))
+      :ARG1 i)
+
+# ::id lpp_1943.20 ::date 2012-07-17T12:15:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
+# ::tokens ["Grown-ups", "never", "understand", "anything", "by", "themselves", ",", "and", "it", "is", "tiresome", "for", "children", "to", "be", "always", "and", "forever", "explaining", "things", "to", "them", "."]
+# ::lemmas ["grow-up", "never", "understand", "anything", "by", "themselves", ",", "and", "it", "be", "tiresome", "for", "child", "to", "be", "always", "and", "forever", "explain", "thing", "to", "they", "."]
+# ::pos_tags ["COMP", "RB", "VBP", "NN", "IN", "PRP", ",", "CC", "PRP", "VBZ", "JJ", "IN", "NNS", "TO", "VB", "RB", "CC", "RB", "VBG", "NNS", "TO", "PRP", "."]
+# ::ner_tags ["0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_20.txt
+(a / and
+      :op1 (u / understand
+            :ARG0 (g / grown-up)
+            :ARG1 (a3 / anything)
+            :mod (b / by-oneself)
+            :time (e2 / ever))
+      :op2 (t / tiresome
+            :domain (e / explain
+                  :ARG0 (c / child)
+                  :ARG1 (t2 / thing)
+                  :ARG2 g
+                  :mod (f / forever)
+                  :time (a4 / always))))
+
+# ::id lpp_1943.21 ::date 2012-06-14T16:08:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt So then I chose another profession , and learned to pilot airplanes .
+# ::tokens ["So", "then", "I", "chose", "another", "profession", ",", "and", "learned", "to", "pilot", "airplanes", "."]
+# ::lemmas ["so", "then", "I", "choose", "another", "profession", ",", "and", "learn", "to", "pilot", "airplane", "."]
+# ::pos_tags ["RB", "RB", "PRP", "VBD", "DT", "NN", ",", "CC", "VBD", "TO", "NN", "NNS", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_21.txt
+(c2 / cause-01
+      :ARG1 (a / and
+            :op1 (c / choose
+                  :ARG0 (i / i)
+                  :ARG1 (p / profession
+                        :mod (a2 / another)))
+            :op2 (l / learn
+                  :ARG0 i
+                  :ARG1 (p2 / pilot-01
+                        :ARG0 i
+                        :ARG1 (a3 / airplane)))))
+
+# ::id lpp_1943.22 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
+# ::tokens ["I", "have", "flown", "a", "little", "over", "all", "parts", "of", "the", "world", ";", "and", "it", "is", "true", "that", "geography", "has", "been", "very", "useful", "to", "me", "."]
+# ::lemmas ["I", "have", "fly", "a", "little", "over", "all", "part", "of", "the", "world", ";", "and", "it", "be", "true", "that", "geography", "have", "be", "very", "useful", "to", "I", "."]
+# ::pos_tags ["PRP", "VBP", "VBN", "DT", "JJ", "IN", "DT", "NNS", "IN", "DT", "NN", ":", "CC", "PRP", "VBZ", "JJ", "IN", "NN", "VBZ", "VBN", "RB", "JJ", "TO", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Jul 6, 2015 ::file lpp_1943_22.txt
+(a / and
+      :op1 (f / fly
+            :ARG0 (i / i)
+            :location (o / over
+                  :op1 (p2 / part
+                        :part-of (w / world))))
+      :op2 (u / useful
+            :ARG0 i
+            :ARG1 (g / geography)
+            :degree (v / very)))
+
+# ::id lpp_1943.23 ::annotator ISI-AMR-05 ::preferred
+# ::snt At a glance I can distinguish China from Arizona .
+# ::tokens ["At", "a", "glance", "I", "can", "distinguish", "COUNTRY_1", "from", "STATE_OR_PROVINCE_1", "."]
+# ::lemmas ["at", "a", "glance", "I", "can", "distinguish", "COUNTRY_1", "from", "STATE_OR_PROVINCE_1", "."]
+# ::pos_tags ["IN", "DT", "NN", "PRP", "MD", "VB", "NNP", "IN", "NNP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "COUNTRY", "O", "STATE_OR_PROVINCE", "O"]
+# ::abstract_map {"COUNTRY_1": {"type": "named-entity", "span": "China", "ops": "China"}, "STATE_OR_PROVINCE_1": {"type": "named-entity", "span": "Arizona", "ops": "Arizona"}}
+# ::save-date Fri Apr 12, 2013 ::file lpp_1943_23.txt
+(p / possible
+      :ARG1 (d / distinguish-01
+            :ARG0 (i / i)
+            :ARG1 (c / country
+                  :name (n / COUNTRY_1))
+            :ARG2 (s / state
+                  :name (n2 / STATE_OR_PROVINCE_1))
+            :manner (g / glance
+                  :ARG0 i)))
+
+# ::id lpp_1943.24 ::date 2012-07-17T13:04:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt If one gets lost in the night , such knowledge is valuable .
+# ::tokens ["If", "one", "gets", "lost", "in", "the", "DATE_ATTRS_1", ",", "such", "knowledge", "is", "valuable", "."]
+# ::lemmas ["if", "one", "get", "lose", "in", "the", "DATE_ATTRS_1", ",", "such", "knowledge", "be", "valuable", "."]
+# ::pos_tags ["IN", "CD", "VBZ", "VBN", "IN", "DT", "NNP", ",", "JJ", "NN", "VBZ", "JJ", "."]
+# ::ner_tags ["O", "NUMBER", "O", "O", "O", "O", "DATE_ATTRS", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"DATE_ATTRS_1": {"type": "date-entity", "span": "night", "attrs": {}, "edges": {"dayperiod": "night"}}}
+# ::save-date Tue Mar 17, 2015 ::file lpp_1943_24.txt
+(v / value-02
+      :ARG1 (k / knowledge
+            :mod (s / such))
+      :condition (g / get-03
+            :ARG1 (o / one)
+            :ARG2 (l / lost
+                  :time (d / DATE_ATTRS_1))))
+
+# ::id lpp_1943.25 ::date 2012-07-17T13:14:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
+# ::tokens ["In", "the", "course", "of", "this", "life", "I", "have", "had", "a", "great", "many", "encounters", "with", "a", "great", "many", "people", "who", "have", "been", "concerned", "with", "matters", "of", "consequence", "."]
+# ::lemmas ["in", "the", "course", "of", "this", "life", "I", "have", "have", "a", "great", "many", "encounter", "with", "a", "great", "many", "people", "who", "have", "be", "concern", "with", "matter", "of", "consequence", "."]
+# ::pos_tags ["IN", "DT", "NN", "IN", "DT", "NN", "PRP", "VBP", "VBD", "DT", "JJ", "JJ", "NNS", "IN", "DT", "JJ", "JJ", "NNS", "WP", "VBP", "VBN", "VBN", "IN", "NNS", "IN", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_25.txt
+(e / encounter
+      :ARG0 (i / i)
+      :ARG1 (p / person
+            :ARG1-of (c / concern
+                  :ARG0 (m3 / matter
+                        :mod (c2 / consequence)))
+            :quant (m2 / many
+                  :mod (g2 / great)))
+      :quant (m / many
+            :mod (g / great))
+      :time (c3 / course
+            :poss (l / life
+                  :mod (t / this))))
+
+# ::id lpp_1943.26 ::date 2012-07-17T13:29:12 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have lived a great deal among grown - ups .
+# ::tokens ["I", "have", "lived", "a", "great", "deal", "among", "grown", "-", "ups", "."]
+# ::lemmas ["I", "have", "live", "a", "great", "deal", "among", "grown", "-", "up", "."]
+# ::pos_tags ["PRP", "VBP", "VBN", "DT", "JJ", "NN", "IN", "JJ", ":", "NNS", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 3, 2014 ::file lpp_1943_26.txt
+(l / live-01
+      :ARG0 (i / i)
+      :location (a / among
+            :op1 (g / grown-up))
+      :mod (d / deal
+            :mod (g2 / great)))
+
+# ::id lpp_1943.27 ::date 2012-07-17T13:31:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have seen them intimately , close at hand .
+# ::tokens ["I", "have", "seen", "them", "intimately", ",", "close", "at", "hand", "."]
+# ::lemmas ["I", "have", "see", "they", "intimately", ",", "close", "at", "hand", "."]
+# ::pos_tags ["PRP", "VBP", "VBN", "PRP", "RB", ",", "RB", "IN", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 16, 2015 ::file lpp_1943_27.txt
+(s / see
+      :ARG0 (i / i)
+      :ARG1 (t / they)
+      :ARG1-of (c / close
+            :ARG2 (a / at-hand))
+      :ARG2-of (i2 / intimate
+            :ARG1 i))
+
+# ::id lpp_1943.28 ::date 2012-07-17T13:35:38 ::annotator ISI-AMR-05 ::preferred
+# ::snt And that has n't much improved my opinion of them .
+# ::tokens ["And", "that", "has", "n't", "much", "improved", "my", "opinion", "of", "them", "."]
+# ::lemmas ["and", "that", "have", "not", "much", "improve", "my", "opinion", "of", "they", "."]
+# ::pos_tags ["CC", "DT", "VBZ", "RB", "JJ", "VBN", "PRP$", "NN", "IN", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu May 16, 2013 ::file lpp_1943_28.txt
+(a / and
+      :op2 (i / improve
+            :ARG0 (t / that)
+            :ARG1 (t3 / thing
+                  :ARG1-of (o2 / opine
+                        :ARG0 (i2 / i)
+                        :topic (t2 / they)))
+            :degree (m2 / much)))
+
+# ::id lpp_1943.29 ::date 2012-07-17T13:38:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt Whenever I met one of them who seemed to me at all clear - sighted , I tried the experiment of showing him my Drawing Number One , which I have always kept .
+# ::tokens ["Whenever", "I", "met", "one", "of", "them", "who", "seemed", "to", "me", "at-all", "clear", "-", "sighted", ",", "I", "tried", "the", "experiment", "of", "showing", "him", "my", "ENTITY_1", ",", "which", "I", "have", "always", "kept", "."]
+# ::lemmas ["Whenever", "I", "meet", "one", "of", "they", "who", "seem", "to", "I", "at-all", "clear", "-", "sight", ",", "I", "try", "the", "experiment", "of", "show", "he", "my", "ENTITY_1", ",", "which", "I", "have", "always", "keep", "."]
+# ::pos_tags ["NNP", "PRP", "VBD", "CD", "IN", "PRP", "WP", "VBD", "TO", "PRP", "COMP", "JJ", ":", "VBN", ",", "PRP", "VBD", "DT", "NN", "IN", "VBG", "PRP", "PRP$", "NNP", ",", "WDT", "PRP", "VBP", "RB", "VBN", "."]
+# ::ner_tags ["O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "ENTITY", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"ENTITY_1": {"type": "named-entity", "span": "Drawing Number One", "ops": "Drawing Number One"}}
+# ::save-date Tue Mar 1, 2016 ::file lpp_1943_29.txt
+(t / try
+      :ARG0 (i / i)
+      :ARG1 (e / experiment-01
+            :ARG1 (s / show-01
+                  :ARG1 (p2 / picture
+                        :name (n / ENTITY_1))
+                  :ARG1-of (k / keep-01
+                        :ARG0 i
+                        :time (a / always))
+                  :ARG2 (p / person
+                        :ARG0-of (s3 / see
+                              :ARG1-of (c / clear-08)
+                              :ARG1-of (s4 / seem
+                                    :ARG2 i))
+                        :ARG1-of (i2 / include
+                              :ARG2 (t3 / they)))))
+      :time (m / meet-02
+            :ARG0 i
+            :ARG1 p
+            :mod (a2 / any)))
+
+# ::id lpp_1943.30 ::date 2012-07-24T08:57:30 ::annotator ISI-AMR-05 ::preferred
+# ::snt I would try to find out , so , if this was a person of true understanding .
+# ::tokens ["I", "would", "try", "to", "find-out", ",", "so", ",", "if", "this", "was", "a", "person", "of", "true", "understanding", "."]
+# ::lemmas ["I", "would", "try", "to", "find-out", ",", "so", ",", "if", "this", "be", "a", "person", "of", "true", "understanding", "."]
+# ::pos_tags ["PRP", "MD", "VB", "TO", "COMP", ",", "RB", ",", "IN", "DT", "VBD", "DT", "NN", "IN", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Feb 4, 2016 ::file lpp_1943_30.txt
+(t / try
+      :ARG0 (i / i)
+      :ARG1 (f / find-out
+            :ARG0 i
+            :ARG1 (u2 / understand
+                  :ARG0 (p / person
+                        :mod (t2 / this))
+                  :ARG1-of (t3 / true)
+                  :mode interrogative)))
+
+# ::id lpp_1943.31 ::date 2012-07-24T09:59:02 ::annotator ISI-AMR-05 ::preferred
+# ::snt But , whoever it was , he , or she , would always say : " That is a hat . "
+# ::tokens ["But", ",", "whoever", "it", "was", ",", "he", ",", "or", "she", ",", "would", "always", "say", ":", "''", "That", "is", "a", "hat", ".", "''"]
+# ::lemmas ["but", ",", "whoever", "it", "be", ",", "he", ",", "or", "she", ",", "would", "always", "say", ":", "''", "that", "be", "a", "hat", ".", "''"]
+# ::pos_tags ["CC", ",", "WP", "PRP", "VBD", ",", "PRP", ",", "CC", "PRP", ",", "MD", "RB", "VB", ":", "''", "DT", "VBZ", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_31.txt
+(c / contrast
+      :ARG2 (s / say
+            :ARG0 (o / or
+                  :op1 (h / he)
+                  :op2 (s2 / she))
+            :ARG1 (h2 / hat
+                  :domain (t / that))
+            :time (a / always)))
+
+# ::id lpp_1943.32 ::date 2012-07-24T10:00:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
+# ::tokens ["Then", "I", "would", "never", "talk", "to", "that", "person", "about", "boa", "constrictors", ",", "or", "primeval", "forests", ",", "or", "stars", "."]
+# ::lemmas ["then", "I", "would", "never", "talk", "to", "that", "person", "about", "boa", "constrictor", ",", "or", "primeval", "forest", ",", "or", "star", "."]
+# ::pos_tags ["RB", "PRP", "MD", "RB", "VB", "TO", "DT", "NN", "IN", "NN", "NNS", ",", "CC", "JJ", "NNS", ",", "CC", "NNS", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_32.txt
+(t / talk-01
+      :ARG0 (i / i)
+      :ARG1 (o / or
+            :op1 (b / boa
+                  :mod (c2 / constrictor))
+            :op2 (f / forest
+                  :mod (p2 / primeval))
+            :op3 (s / star))
+      :ARG2 (p / person
+            :mod (t2 / that))
+      :time (e / ever))
+
+# ::id lpp_1943.33 ::date 2012-07-24T10:02:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt I would bring myself down to his level .
+# ::tokens ["I", "would", "bring", "myself", "down", "to", "his", "level", "."]
+# ::lemmas ["I", "would", "bring", "myself", "down", "to", "he", "level", "."]
+# ::pos_tags ["PRP", "MD", "VB", "PRP", "RB", "TO", "PRP$", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_33.txt
+(b / bring
+      :ARG0 (i / i)
+      :ARG1 i
+      :ARG2 (l / level
+            :poss (h / he))
+      :ARG3 (d / down))
+
+# ::id lpp_1943.34 ::date 2012-07-24T10:05:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt I would talk to him about bridge , and golf , and politics , and neckties .
+# ::tokens ["I", "would", "talk", "to", "him", "about", "bridge", ",", "and", "golf", ",", "and", "politics", ",", "and", "neckties", "."]
+# ::lemmas ["I", "would", "talk", "to", "he", "about", "bridge", ",", "and", "golf", ",", "and", "politics", ",", "and", "necktie", "."]
+# ::pos_tags ["PRP", "MD", "VB", "TO", "PRP", "IN", "NN", ",", "CC", "NN", ",", "CC", "NNS", ",", "CC", "NNS", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_34.txt
+(t / talk-01
+      :ARG0 (i / i)
+      :ARG1 (a / and
+            :op1 (b / bridge)
+            :op2 (g / golf)
+            :op3 (p / politics)
+            :op4 (n2 / necktie))
+      :ARG2 (h / he))
+
+# ::id lpp_1943.35 ::date 2012-07-24T10:08:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt And the grown - up would be greatly pleased to have met such a sensible man .
+# ::tokens ["And", "the", "grown-up", "would", "be", "greatly", "pleased", "to", "have", "met", "such", "a", "sensible", "man", "."]
+# ::lemmas ["and", "the", "grow-up", "would", "be", "greatly", "pleased", "to", "have", "meet", "such", "a", "sensible", "man", "."]
+# ::pos_tags ["CC", "DT", "COMP", "MD", "VB", "RB", "JJ", "TO", "VB", "VBN", "PDT", "DT", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue May 5, 2015 ::file lpp_1943_35.txt
+(a / and
+      :op2 (p / please-01
+            :ARG0 (m / meet-02
+                  :ARG0 (g / grown-up)
+                  :ARG1 (m2 / man
+                        :ARG2-of (s / sense-02
+                              :degree (s2 / such))))
+            :ARG1 g
+            :degree (g2 / great)))
+
+# ::id lpp_1943.36 ::date 2012-07-24T10:10:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 2 .
+# ::tokens ["Chapter", "1", "."]
+# ::lemmas ["chapter", "1", "."]
+# ::pos_tags ["NN", "CD", "."]
+# ::ner_tags ["O", "NUMBER", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "2", "value": 2}}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_36.txt
+(c / chapter
+      :mod 1)
+
+# ::id lpp_1943.37 ::date 2012-07-24T10:10:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I lived my life alone , without anyone that I could really talk to , until I had an accident with my plane in the Desert of Sahara , six years ago .
+# ::tokens ["So", "I", "lived", "my", "life", "alone", ",", "without", "anyone", "that", "I", "could", "really", "talk", "to", ",", "until", "I", "had", "an", "accident", "with", "my", "plane", "in", "the", "LOCATION_1", ",", "1", "years", "ago", "."]
+# ::lemmas ["so", "I", "live", "my", "life", "alone", ",", "without", "anyone", "that", "I", "could", "really", "talk", "to", ",", "until", "I", "have", "a", "accident", "with", "my", "plane", "in", "the", "LOCATION_1", ",", "1", "year", "ago", "."]
+# ::pos_tags ["IN", "PRP", "VBD", "PRP$", "NN", "RB", ",", "IN", "NN", "IN", "PRP", "MD", "RB", "VB", "TO", ",", "IN", "PRP", "VBD", "DT", "NN", "IN", "PRP$", "NN", "IN", "DT", "NNP", ",", "CD", "NNS", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CAUSE_OF_DEATH", "O", "O", "O", "O", "O", "LOCATION", "O", "NUMBER", "DATE", "DATE", "O"]
+# ::abstract_map {"LOCATION_1": {"type": "named-entity", "span": "Desert of Sahara", "ops": "Desert of Sahara"}, "1": {"type": "quantity", "span": "six", "value": 6}}
+# ::save-date Tue Oct 6, 2015 ::file lpp_1943_37.txt
+(c / cause-01
+      :ARG1 (l / live-01
+            :ARG0 (i / i
+                  :ARG0-of (t3 / talk-01
+                        :ARG1-of (r / real)
+                        :ARG2 (a5 / anyone)))
+            :ARG1 (l2 / life
+                  :poss i)
+            :duration (u / until
+                  :op1 (h / have-06
+                        :ARG0 i
+                        :ARG1 (a3 / accident
+                              :mod (p / plane))
+                        :location (d / desert
+                              :name (n / LOCATION_1))
+                        :time (b / before
+                              :op1 (n2 / now)
+                              :quant (t2 / temporal-quantity
+                                    :quant 1
+                                    :unit (y / year)))))
+            :manner (a / alone)))
+
+# ::id lpp_1943.38 ::date 2012-07-24T10:25:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt Something was broken in my engine .
+# ::tokens ["Something", "was", "broken-in", "my", "engine", "."]
+# ::lemmas ["something", "be", "break-in", "my", "engine", "."]
+# ::pos_tags ["NN", "VBD", "COMP", "PRP$", "NN", "."]
+# ::ner_tags ["O", "O", "0", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_38.txt
+(b / break-01
+      :ARG1 (s / something
+            :location (e / engine
+                  :poss (i / i))))
+
+# ::id lpp_1943.39 ::date 2012-07-24T10:28:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt And as I had with me neither a mechanic nor any passengers , I set myself to attempt the difficult repairs all alone .
+# ::tokens ["And", "as", "I", "had", "with", "me", "neither", "a", "mechanic", "nor", "any", "passengers", ",", "I", "set", "myself", "to", "attempt", "the", "difficult", "repairs", "all", "alone", "."]
+# ::lemmas ["and", "as", "I", "have", "with", "I", "neither", "a", "mechanic", "nor", "any", "passenger", ",", "I", "set", "myself", "to", "attempt", "the", "difficult", "repair", "all", "alone", "."]
+# ::pos_tags ["CC", "IN", "PRP", "VBD", "IN", "PRP", "CC", "DT", "NN", "CC", "DT", "NNS", ",", "PRP", "VBD", "PRP", "TO", "VB", "DT", "JJ", "NNS", "DT", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_39.txt
+(a / and
+      :op2 (c / cause-01
+            :ARG0 (h / have
+                  :ARG0 (i / i)
+                  :ARG1 (o / or
+                        :op1 (m / mechanic)
+                        :op2 (p / passenger))
+                  :accompanier i)
+            :ARG1 (a2 / attempt
+                  :ARG0 i
+                  :ARG1 (r / repair
+                        :mod (d / difficult))
+                  :mod (a3 / alone
+                        :degree (a4 / all)))))
+
+# ::id lpp_1943.40 ::date 2012-07-24T10:37:48 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a question of life or death for me : I had scarcely enough drinking water to last a week .
+# ::tokens ["It", "was", "a", "question", "of", "life", "or", "death", "for", "me", ":", "I", "had", "scarcely", "enough", "drinking", "water", "to", "last", "a", "week", "."]
+# ::lemmas ["it", "be", "a", "question", "of", "life", "or", "death", "for", "I", ":", "I", "have", "scarcely", "enough", "drinking", "water", "to", "last", "a", "week", "."]
+# ::pos_tags ["PRP", "VBD", "DT", "NN", "IN", "NN", "CC", "NN", "IN", "PRP", ":", "PRP", "VBD", "RB", "JJ", "NN", "NN", "TO", "VB", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DATE", "DATE", "DATE", "O"]
+# ::abstract_map {}
+# ::save-date Sat Feb 6, 2016 ::file lpp_1943_40.txt
+(q / question-01
+      :ARG0 (i / i)
+      :ARG1 (o / or
+            :op1 (l / live-01)
+            :op2 (d / die))
+      :ARG1-of (c / cause-01
+            :ARG0 (h / have
+                  :ARG0 i
+                  :ARG1 (w / water
+                        :ARG1-of (l2 / last-03
+                              :ARG2 (t / temporal-quantity
+                                    :quant 1
+                                    :unit (w2 / week))
+                              :ARG3 i)
+                        :purpose (d2 / drink-01
+                              :ARG0 i)
+                        :quant (e / enough
+                              :mod (s / scarce))))))
+
+# ::id lpp_1943.41 ::date 2012-07-24T10:52:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt The first night , then , I went to sleep on the sand , a thousand miles from any human habitation .
+# ::tokens ["The", "ORDINAL_ENTITY_1", "DATE_ATTRS_1", ",", "then", ",", "I", "went", "to", "sleep", "on", "the", "sand", ",", "a", "1000", "miles", "from", "any", "human", "habitation", "."]
+# ::lemmas ["the", "ORDINAL_ENTITY_1", "DATE_ATTRS_1", ",", "then", ",", "I", "go", "to", "sleep", "on", "the", "sand", ",", "a", "1000", "mile", "from", "any", "human", "habitation", "."]
+# ::pos_tags ["DT", "JJ", "NNP", ",", "RB", ",", "PRP", "VBD", "TO", "VB", "IN", "DT", "NN", ",", "DT", "CD", "NNS", "IN", "DT", "JJ", "NN", "."]
+# ::ner_tags ["O", "ORDINAL_ENTITY", "DATE_ATTRS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"DATE_ATTRS_1": {"type": "date-entity", "span": "night", "attrs": {}, "edges": {"dayperiod": "night"}}, "ORDINAL_ENTITY_1": {"type": "ordinal-entity", "span": "1", "ops": ["1"]}, "1000": {"type": "quantity", "span": "thousand", "value": 1000}}
+# ::save-date Tue Mar 1, 2016 ::file lpp_1943_41.txt
+(s / sleep
+      :ARG0 (i / i)
+      :location (s2 / sand)
+      :location (r / relative-position
+            :direction (a3 / away)
+            :op1 (p / place
+                  :ARG1-of (i2 / inhabit
+                        :ARG0 (h / human))
+                  :mod (a2 / any))
+            :quant (d / distance-quantity
+                  :quant 1000
+                  :unit (m / mile)))
+      :time (d2 / DATE_ATTRS_1
+            :ord (o / ORDINAL_ENTITY_1)))
+
+# ::id lpp_1943.42 ::date 2012-07-24T11:10:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean .
+# ::tokens ["I", "was", "more", "isolated", "than", "a", "shipwrecked", "sailor", "on", "a", "raft", "in", "the", "middle", "of", "the", "ocean", "."]
+# ::lemmas ["I", "be", "more", "isolate", "than", "a", "shipwrecked", "sailor", "on", "a", "raft", "in", "the", "middle", "of", "the", "ocean", "."]
+# ::pos_tags ["PRP", "VBD", "RBR", "VBN", "IN", "DT", "JJ", "NN", "IN", "DT", "NN", "IN", "DT", "NN", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_42.txt
+(i / isolate
+      :ARG1 (i2 / i)
+      :compared-to (p / person
+            :ARG0-of (s / sail)
+            :ARG1-of (s2 / shipwreck)
+            :location (r / raft
+                  :location (o / ocean
+                        :part (m2 / middle))))
+      :degree (m / more))
+
+# ::id lpp_1943.43 ::date 2012-07-24T11:16:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt Thus you can imagine my amazement , at sunrise , when I was awakened by an odd little voice .
+# ::tokens ["Thus", "you", "can", "imagine", "my", "amazement", ",", "at", "sunrise", ",", "when", "I", "was", "awakened", "by", "an", "odd", "little", "voice", "."]
+# ::lemmas ["thus", "you", "can", "imagine", "my", "amazement", ",", "at", "sunrise", ",", "when", "I", "be", "awaken", "by", "a", "odd", "little", "voice", "."]
+# ::pos_tags ["RB", "PRP", "MD", "VB", "PRP$", "NN", ",", "IN", "NN", ",", "WRB", "PRP", "VBD", "VBN", "IN", "DT", "JJ", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon May 13, 2013 ::file lpp_1943_43.txt
+(c / cause-01
+      :ARG1 (p / possible
+            :ARG1 (i2 / imagine
+                  :ARG0 (y / you)
+                  :ARG1 (a / amaze
+                        :ARG1 (i / i)
+                        :time (s / sunrise
+                              :time-of (w / wake-01
+                                    :ARG0 (v / voice
+                                          :mod (o / odd)
+                                          :mod (l / little))
+                                    :ARG1 i))))))
+
+# ::id lpp_1943.44 ::date 2012-07-24T11:24:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt It said : " If you please -- draw me a sheep ! "
+# ::tokens ["It", "said", ":", "''", "If", "you", "please", "--", "draw", "me", "a", "sheep", "!", "''"]
+# ::lemmas ["it", "say", ":", "''", "if", "you", "please", "--", "draw", "I", "a", "sheep", "!", "''"]
+# ::pos_tags ["PRP", "VBD", ":", "''", "IN", "PRP", "VB", ":", "VB", "PRP", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Oct 16, 2015 ::file lpp_1943_44.txt
+(s / say
+      :ARG0 (i / it)
+      :ARG1 (d / draw-01
+            :ARG0 (y2 / you)
+            :ARG1 (s2 / sheep)
+            :ARG2 (i2 / i)
+            :mode imperative))
+
+# ::id lpp_1943.45 ::date 2012-07-24T11:28:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What ! "
+# ::tokens ["''", "What", "!", "''"]
+# ::lemmas ["''", "what", "!", "''"]
+# ::pos_tags ["''", "WDT", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_45.txt
+(s / string-entity
+      :value "what")
+
+# ::id lpp_1943.46 ::date 2012-07-24T11:30:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Draw me a sheep ! "
+# ::tokens ["''", "Draw", "me", "a", "sheep", "!", "''"]
+# ::lemmas ["''", "draw", "I", "a", "sheep", "!", "''"]
+# ::pos_tags ["''", "VB", "PRP", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_46.txt
+(d / draw-01
+      :ARG0 (y / you)
+      :ARG1 (s / sheep)
+      :ARG2 (i / i)
+      :mode imperative)
+
+# ::id lpp_1943.47 ::date 2012-07-24T11:31:14 ::annotator ISI-AMR-05 ::preferred
+# ::snt I jumped to my feet , completely thunderstruck .
+# ::tokens ["I", "jumped", "to", "my", "feet", ",", "completely", "thunderstruck", "."]
+# ::lemmas ["I", "jump", "to", "my", "foot", ",", "completely", "thunderstruck", "."]
+# ::pos_tags ["PRP", "VBD", "TO", "PRP$", "NNS", ",", "RB", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 28, 2015 ::file lpp_1943_47.txt
+(j / jump
+      :ARG0 (i / i
+            :mod (t / thunderstruck
+                  :ARG1-of (c / complete-02)))
+      :destination (f / foot
+            :part-of i))
+
+# ::id lpp_1943.48 ::date 2012-06-07T17:07:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt I blinked my eyes hard .
+# ::tokens ["I", "blinked", "my", "eyes", "hard", "."]
+# ::lemmas ["I", "blink", "my", "eye", "hard", "."]
+# ::pos_tags ["PRP", "VBD", "PRP$", "NNS", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_48.txt
+(b / blink
+      :ARG0 (i / i)
+      :ARG1 (e / eye
+            :part-of i)
+      :ARG1-of (h / hard-04))
+
+# ::id lpp_1943.49 ::date 2012-07-24T11:34:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt I looked carefully all around me .
+# ::tokens ["I", "looked", "carefully", "all", "around", "me", "."]
+# ::lemmas ["I", "look", "carefully", "all", "around", "I", "."]
+# ::pos_tags ["PRP", "VBD", "RB", "DT", "IN", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_49.txt
+(l / look-01
+      :ARG0 (i / i)
+      :direction (a / around
+            :mod (a2 / all)
+            :op1 i)
+      :manner (c / careful))
+
+# ::id lpp_1943.50 ::date 2012-07-24T11:36:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I saw a most extraordinary small person , who stood there examining me with great seriousness .
+# ::tokens ["And", "I", "saw", "a", "most", "extraordinary", "small", "person", ",", "who", "stood", "there", "examining", "me", "with", "great", "seriousness", "."]
+# ::lemmas ["and", "I", "see", "a", "most", "extraordinary", "small", "person", ",", "who", "stand", "there", "examine", "I", "with", "great", "seriousness", "."]
+# ::pos_tags ["CC", "PRP", "VBD", "DT", "RBS", "JJ", "JJ", "NN", ",", "WP", "VBD", "EX", "VBG", "PRP", "IN", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Apr 8, 2015 ::file lpp_1943_50.txt
+(a / and
+      :op2 (s / see
+            :ARG0 (i / i)
+            :ARG1 (p / person
+                  :ARG0-of (e2 / examine
+                        :ARG1 i
+                        :ARG2-of (s4 / serious-01
+                              :degree (g / great)))
+                  :ARG1-of (s3 / stand-01
+                        :ARG2 (t / there))
+                  :mod (s2 / small)
+                  :mod (e / extraordinary
+                        :degree (m / most)))))
+
+# ::id lpp_1943.51 ::date 2012-07-24T11:44:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt Here you may see the best portrait that , later , I was able to make of him .
+# ::tokens ["Here", "you", "may", "see", "the", "best", "portrait", "that", ",", "later", ",", "I", "was", "able", "to", "make", "of", "him", "."]
+# ::lemmas ["here", "you", "may", "see", "the", "best", "portrait", "that", ",", "later", ",", "I", "be", "able", "to", "make", "of", "he", "."]
+# ::pos_tags ["RB", "PRP", "MD", "VB", "DT", "JJS", "NN", "IN", ",", "RB", ",", "PRP", "VBD", "JJ", "TO", "VB", "IN", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Dec 1, 2015 ::file lpp_1943_51.txt
+(p / possible
+      :ARG1 (s / see
+            :ARG0 (y / you)
+            :ARG1 (p2 / portrait
+                  :ARG1-of (g / good-02
+                        :degree (m / most))
+                  :ARG1-of (m2 / make-01
+                        :ARG0 (i / i)
+                        :ARG1-of (p3 / possible)
+                        :time (l / late
+                              :degree (m3 / more)))
+                  :topic (h / he))
+            :location (h2 / here)))
+
+# ::id lpp_1943.52 ::date 2012-07-24T11:50:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt But my drawing is certainly very much less charming than its model .
+# ::tokens ["But", "my", "drawing", "is", "certainly", "very", "much", "less", "charming", "than", "its", "model", "."]
+# ::lemmas ["but", "my", "drawing", "be", "certainly", "very", "much", "less", "charming", "than", "its", "model", "."]
+# ::pos_tags ["CC", "PRP$", "NN", "VBZ", "RB", "RB", "RB", "JJR", "JJ", "IN", "PRP$", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_52.txt
+(c3 / contrast
+      :ARG2 (c / charm-01
+            :ARG0 (p / picture
+                  :ARG1-of (d / draw-01
+                        :ARG0 (i / i)))
+            :compared-to (m2 / model
+                  :poss p)
+            :mod (c2 / certain)
+            :quant (l / less
+                  :degree (m / much
+                        :degree (v / very)))))
+
+# ::id lpp_1943.53 ::date 2012-07-24T11:54:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt That , however , is not my fault .
+# ::tokens ["That", ",", "however", ",", "is", "not", "my", "fault", "."]
+# ::lemmas ["that", ",", "however", ",", "be", "not", "my", "fault", "."]
+# ::pos_tags ["DT", ",", "RB", ",", "VBZ", "RB", "PRP$", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_53.txt
+(c / contrast
+      :ARG2 (f / fault-01
+            :ARG1 (i / i)
+            :ARG2 (t / that)))
+
+# ::id lpp_1943.54 ::date 2012-07-24T11:56:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt The grown - ups discouraged me in my painter 's career when I was six years old , and I never learned to draw anything , except boas from the outside and boas from the inside .
+# ::tokens ["The", "grown", "-", "ups", "discouraged", "me", "in", "my", "painter", "'s", "career", "when", "I", "was", "1", "years", "old", ",", "and", "I", "never", "learned", "to", "draw", "anything", ",", "except", "boas", "from", "the", "outside", "and", "boas", "from", "the", "inside", "."]
+# ::lemmas ["the", "grown", "-", "up", "discourage", "I", "in", "my", "painter", "'s", "career", "when", "I", "be", "1", "year", "old", ",", "and", "I", "never", "learn", "to", "draw", "anything", ",", "except", "boa", "from", "the", "outside", "and", "boa", "from", "the", "inside", "."]
+# ::pos_tags ["DT", "JJ", ":", "NNS", "VBD", "PRP", "IN", "PRP$", "NN", "POS", "NN", "WRB", "PRP", "VBD", "CD", "NNS", "JJ", ",", "CC", "PRP", "RB", "VBD", "TO", "VB", "NN", ",", "IN", "NNS", "IN", "DT", "JJ", "CC", "NNS", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "NUMBER", "DURATION", "DURATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "six", "value": 6}}
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_54.txt
+(d / discourage
+      :ARG0 (g / grown-up)
+      :ARG0-of (c2 / cause-01
+            :ARG1 (l / learn
+                  :ARG0 (i / i)
+                  :ARG1 (d2 / draw-01
+                        :ARG0 i
+                        :ARG1 (a2 / anything))
+                  :ARG2-of (e2 / except
+                        :ARG1 (a3 / and
+                              :op1 (b / boa
+                                    :direction (f / from
+                                          :op1 (o / outside)))
+                              :op2 (b2 / boa
+                                    :direction (f2 / from
+                                          :op1 (i2 / inside)))))
+                  :time (e / ever)))
+      :ARG1 i
+      :ARG2 (c / career
+            :poss i
+            :topic (p / person
+                  :ARG0-of (p2 / paint-02)))
+      :time (a / age-01
+            :ARG1 i
+            :ARG2 (t2 / temporal-quantity
+                  :quant 1
+                  :unit (y / year))))
+
+# ::id lpp_1943.55 ::date 2012-07-24T12:05:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Now I stared at this sudden apparition with my eyes fairly starting out of my head in astonishment .
+# ::tokens ["Now", "I", "stared", "at", "this", "sudden", "apparition", "with", "my", "eyes", "fairly", "starting-out", "of", "my", "head", "in", "astonishment", "."]
+# ::lemmas ["now", "I", "stare", "at", "this", "sudden", "apparition", "with", "my", "eye", "fairly", "start-out", "of", "my", "head", "in", "astonishment", "."]
+# ::pos_tags ["RB", "PRP", "VBD", "IN", "DT", "JJ", "NN", "IN", "PRP$", "NNS", "RB", "COMP", "IN", "PRP$", "NN", "IN", "NN", "."]
+# ::ner_tags ["DATE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "0", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_55.txt
+(s / stare
+      :ARG0 (i / i)
+      :ARG1 (t / thing
+            :ARG1-of (a / appear-01
+                  :manner (s2 / sudden))
+            :mod (t2 / this))
+      :manner (s3 / start-03
+            :ARG0 (e / eye
+                  :part-of i)
+            :ARG1-of (c / cause-01
+                  :ARG0 (a2 / astonish
+                        :ARG1 i))
+            :degree (f / fair)
+            :manner (o / out-06
+                  :ARG1 e
+                  :ARG2 (h / head
+                        :part-of i)))
+      :time (n / now))
+
+# ::id lpp_1943.56 ::date 2012-07-24T12:11:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt Remember , I had crashed in the desert a thousand miles from any inhabited region .
+# ::tokens ["Remember", ",", "I", "had", "crashed", "in", "the", "desert", "a", "1000", "miles", "from", "any", "inhabited", "region", "."]
+# ::lemmas ["remember", ",", "I", "have", "crash", "in", "the", "desert", "a", "1000", "mile", "from", "any", "inhabit", "region", "."]
+# ::pos_tags ["VB", ",", "PRP", "VBD", "VBN", "IN", "DT", "NN", "DT", "CD", "NNS", "IN", "DT", "VBN", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"1000": {"type": "quantity", "span": "thousand", "value": 1000}}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_56.txt
+(r / remember
+      :ARG0 (y / you)
+      :ARG1 (c / crash-01
+            :ARG1 (i / i)
+            :location (d / desert)
+            :location (r3 / relative-position
+                  :direction (a / away)
+                  :op1 (r2 / region
+                        :ARG1-of (i2 / inhabit)
+                        :mod (a2 / any))
+                  :quant (d2 / distance-quantity
+                        :quant 1000
+                        :unit (m / mile))))
+      :mode imperative)
+
+# ::id lpp_1943.57 ::date 2012-07-24T12:14:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt And yet my little man seemed neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear .
+# ::tokens ["And", "yet", "my", "little", "man", "seemed", "neither", "to", "be", "straying", "uncertainly", "among", "the", "sands", ",", "nor", "to", "be", "fainting", "from", "fatigue", "or", "hunger", "or", "thirst", "or", "fear", "."]
+# ::lemmas ["and", "yet", "my", "little", "man", "seem", "neither", "to", "be", "stray", "uncertainly", "among", "the", "sand", ",", "nor", "to", "be", "faint", "from", "fatigue", "or", "hunger", "or", "thirst", "or", "fear", "."]
+# ::pos_tags ["CC", "RB", "PRP$", "JJ", "NN", "VBD", "CC", "TO", "VB", "VBG", "RB", "IN", "DT", "NNS", ",", "CC", "TO", "VB", "VBG", "IN", "NN", "CC", "NN", "CC", "NN", "CC", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_57.txt
+(c3 / contrast
+      :ARG2 (s / seem
+            :ARG1 (a / and
+                  :op1 (s2 / stray
+                        :ARG0 (m / man
+                              :mod (l / little)
+                              :poss (i / i))
+                        :ARG1 (a3 / among
+                              :op1 (s3 / sand))
+                        :manner (c / certain))
+                  :op2 (f / faint-01
+                        :ARG0 m
+                        :ARG1-of (c2 / cause-01
+                              :ARG0 (o / or
+                                    :op1 (f2 / fatigue-01)
+                                    :op2 (h / hunger-01)
+                                    :op3 (t / thirst)
+                                    :op4 (f3 / fear-01)))))))
+
+# ::id lpp_1943.58 ::date 2012-07-24T12:23:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt Nothing about him gave any suggestion of a child lost in the middle of the desert , a thousand miles from any human habitation .
+# ::tokens ["Nothing", "about", "him", "gave", "any", "suggestion", "of", "a", "child", "lost", "in", "the", "middle", "of", "the", "desert", ",", "a", "1000", "miles", "from", "any", "human", "habitation", "."]
+# ::lemmas ["nothing", "about", "he", "give", "any", "suggestion", "of", "a", "child", "lose", "in", "the", "middle", "of", "the", "desert", ",", "a", "1000", "mile", "from", "any", "human", "habitation", "."]
+# ::pos_tags ["NN", "IN", "PRP", "VBD", "DT", "NN", "IN", "DT", "NN", "VBN", "IN", "DT", "NN", "IN", "DT", "NN", ",", "DT", "CD", "NNS", "IN", "DT", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"1000": {"type": "quantity", "span": "thousand", "value": 1000}}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_58.txt
+(s / suggest
+      :ARG0 (n / nothing
+            :topic (h / he))
+      :ARG1 (c / child
+            :ARG1-of (l / lose
+                  :location (d / desert
+                        :part (m / middle))
+                  :location (r / relative-position
+                        :direction (a2 / away)
+                        :op1 (t / thing
+                              :ARG1-of (i / inhabit
+                                    :ARG0 (h2 / human))
+                              :mod (a3 / any))
+                        :quant (d2 / distance-quantity
+                              :quant 1000
+                              :unit (m2 / mile))))))
+
+# ::id lpp_1943.59 ::date 2012-07-24T12:28:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt When at last I was able to speak , I said to him : " But -- what are you doing here ? "
+# ::tokens ["When", "at", "last", "I", "was", "able", "to", "speak", ",", "I", "said", "to", "him", ":", "''", "But", "--", "what", "are", "you", "doing", "here", "?", "''"]
+# ::lemmas ["when", "at", "last", "I", "be", "able", "to", "speak", ",", "I", "say", "to", "he", ":", "''", "but", "--", "what", "be", "you", "do", "here", "?", "''"]
+# ::pos_tags ["WRB", "IN", "JJ", "PRP", "VBD", "JJ", "TO", "VB", ",", "PRP", "VBD", "TO", "PRP", ":", "''", "CC", ":", "WP", "VBP", "PRP", "VBG", "RB", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_59.txt
+(s / say
+      :ARG0 (i / i)
+      :ARG1 (c / contrast
+            :ARG2 (b2 / be-located-at
+                  :ARG1 (y2 / you)
+                  :ARG1-of (c2 / cause-01
+                        :ARG0 (a / amr-unknown))
+                  :ARG2 (h2 / here)
+                  :mode interrogative))
+      :ARG2 (h / he)
+      :time (p / possible
+            :ARG1 (s2 / speak
+                  :ARG0 i
+                  :time (a2 / at-last))))
+
+# ::id lpp_1943.60 ::date 2012-07-24T12:32:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt And in answer he repeated , very slowly , as if he were speaking of a matter of great consequence : " If you please -- draw me a sheep ... "
+# ::tokens ["And", "in", "answer", "he", "repeated", ",", "very", "slowly", ",", "as", "if", "he", "were", "speaking", "of", "a", "matter", "of", "great", "consequence", ":", "''", "If", "you", "please", "--", "draw", "me", "a", "sheep", "...", "''"]
+# ::lemmas ["and", "in", "answer", "he", "repeat", ",", "very", "slowly", ",", "as", "if", "he", "be", "speak", "of", "a", "matter", "of", "great", "consequence", ":", "''", "if", "you", "please", "--", "draw", "I", "a", "sheep", "...", "''"]
+# ::pos_tags ["CC", "IN", "NN", "PRP", "VBD", ",", "RB", "RB", ",", "IN", "IN", "PRP", "VBD", "VBG", "IN", "DT", "NN", "IN", "JJ", "NN", ":", "''", "IN", "PRP", "VB", ":", "VB", "PRP", "DT", "NN", ":", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Nov 11, 2015 ::file lpp_1943_60.txt
+(a / and
+      :op2 (r / repeat-01
+            :ARG0 (h / he)
+            :ARG1 (d / draw-01
+                  :ARG0 (y2 / you)
+                  :ARG1 (s3 / sheep)
+                  :ARG2 (i / i)
+                  :mode imperative)
+            :ARG1-of (s / slow
+                  :degree (v / very))
+            :conj-as-if (s2 / speak
+                  :ARG0 h
+                  :ARG1 (m / matter
+                        :mod (c / consequence
+                              :mod (g / great))))
+            :purpose (a2 / answer-01
+                  :ARG0 h)))
+
+# ::id lpp_1943.61 ::date 2012-07-24T12:43:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt When a mystery is too overpowering , one dare not disobey .
+# ::tokens ["When", "a", "mystery", "is", "too", "overpowering", ",", "one", "dare", "not", "disobey", "."]
+# ::lemmas ["when", "a", "mystery", "be", "too", "overpowering", ",", "one", "dare", "not", "disobey", "."]
+# ::pos_tags ["WRB", "DT", "NN", "VBZ", "RB", "JJ", ",", "CD", "MD", "RB", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_61.txt
+(d / dare
+      :ARG0 (o / one)
+      :ARG2 (d2 / disobey
+            :ARG0 o)
+      :time (o2 / overpower
+            :ARG0 (m / mystery)
+            :degree (t2 / too)))
+
+# ::id lpp_1943.62 ::date 2012-07-24T12:49:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Absurd as it might seem to me , a thousand miles from any human habitation and in danger of death , I took out of my pocket a sheet of paper and my fountain - pen .
+# ::tokens ["Absurd", "as", "it", "might", "seem", "to", "me", ",", "a", "1000", "miles", "from", "any", "human", "habitation", "and", "in", "danger", "of", "death", ",", "I", "took-out", "of", "my", "pocket", "a", "sheet", "of", "paper", "and", "my", "fountain", "-", "pen", "."]
+# ::lemmas ["absurd", "as", "it", "might", "seem", "to", "I", ",", "a", "1000", "mile", "from", "any", "human", "habitation", "and", "in", "danger", "of", "death", ",", "I", "take-out", "of", "my", "pocket", "a", "sheet", "of", "paper", "and", "my", "fountain", "-", "pen", "."]
+# ::pos_tags ["JJ", "IN", "PRP", "MD", "VB", "TO", "PRP", ",", "DT", "CD", "NNS", "IN", "DT", "JJ", "NN", "CC", "IN", "NN", "IN", "NN", ",", "PRP", "COMP", "IN", "PRP$", "NN", "DT", "NN", "IN", "NN", "CC", "PRP$", "NN", ":", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"1000": {"type": "quantity", "span": "thousand", "value": 1000}}
+# ::save-date Mon May 25, 2015 ::file lpp_1943_62.txt
+(t / take
+      :ARG0 (i / i
+            :ARG1-of (e / endanger
+                  :ARG0 (d2 / die
+                        :ARG1 i))
+            :location (r / relative-position
+                  :direction (a2 / away)
+                  :op1 (p5 / place
+                        :ARG1-of (i2 / inhabit
+                              :ARG0 (h / human))
+                        :mod (a3 / any))
+                  :quant (d / distance-quantity
+                        :quant 1000
+                        :unit (m / mile))))
+      :ARG1 (a / and
+            :op1 (p / paper
+                  :quant (s / sheet
+                        :quant 1))
+            :op2 (p2 / pen
+                  :mod (f / fountain)
+                  :poss i))
+      :ARG2 (p3 / pocket
+            :poss i)
+      :concession (p4 / possible
+            :ARG1 (s2 / seem
+                  :ARG1 (a4 / absurd)
+                  :ARG2 i)))
+
+# ::id lpp_1943.63 ::date 2012-07-24T12:58:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt But then I remembered how my studies had been concentrated on geography , history , arithmetic , and grammar , and I told the little chap ( a little crossly , too ) that I did not know how to draw .
+# ::tokens ["But", "then", "I", "remembered", "how", "my", "studies", "had", "been", "concentrated", "on", "geography", ",", "history", ",", "arithmetic", ",", "and", "grammar", ",", "and", "I", "told", "the", "little", "chap", "(", "a", "little", "crossly", ",", "too", ")", "that", "I", "did", "not", "know", "how", "to", "draw", "."]
+# ::lemmas ["but", "then", "I", "remember", "how", "my", "study", "have", "be", "concentrate", "on", "geography", ",", "history", ",", "arithmetic", ",", "and", "grammar", ",", "and", "I", "tell", "the", "little", "chap", "(", "a", "little", "crossly", ",", "too", ")", "that", "I", "do", "not", "know", "how", "to", "draw", "."]
+# ::pos_tags ["CC", "RB", "PRP", "VBD", "WRB", "PRP$", "NNS", "VBD", "VBN", "VBN", "IN", "NN", ",", "NN", ",", "NN", ",", "CC", "NN", ",", "CC", "PRP", "VBD", "DT", "JJ", "NN", "VBD", "DT", "JJ", "RB", ",", "RB", "RB", "IN", "PRP", "VBD", "RB", "VB", "WRB", "TO", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Mar 18, 2015 ::file lpp_1943_63.txt
+(c4 / contrast
+      :ARG2 (a / and
+            :op1 (r / remember
+                  :ARG0 (i / i)
+                  :ARG1 (c / concentrate
+                        :ARG1 (a2 / and
+                              :op1 (g / geography)
+                              :op2 (h / history)
+                              :op3 (a3 / arithmetic)
+                              :op4 (g2 / grammar))
+                        :ARG2 (s / study-01
+                              :ARG0 i))
+                  :time (t / then))
+            :op2 (t2 / tell
+                  :ARG0 i
+                  :ARG1 (k / know-03
+                        :ARG0 i
+                        :ARG1 (d / draw-01
+                              :ARG0 i))
+                  :ARG2 (c2 / chap
+                        :mod (l / little))
+                  :manner (c3 / cross
+                        :mod (l2 / little)
+                        :mod (a4 / also)))))
+
+# ::id lpp_1943.64 ::date 2012-07-24T13:07:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt He answered me : " That does n't matter .
+# ::tokens ["He", "answered", "me", ":", "''", "That", "does", "n't", "matter", "."]
+# ::lemmas ["he", "answer", "I", ":", "''", "that", "do", "not", "matter", "."]
+# ::pos_tags ["PRP", "VBD", "PRP", ":", "''", "DT", "VBZ", "RB", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_64.txt
+(a / answer-01
+      :ARG0 (h / he)
+      :ARG1 (i / i)
+      :ARG2 (m2 / matter-01
+            :ARG1 (t / that)))
+
+# ::id lpp_1943.65 ::date 2012-07-24T13:09:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt Draw me a sheep ... "
+# ::tokens ["Draw", "me", "a", "sheep", "...", "''"]
+# ::lemmas ["draw", "I", "a", "sheep", "...", "''"]
+# ::pos_tags ["VB", "PRP", "DT", "NN", ":", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_65.txt
+(d / draw-01
+      :ARG0 (y / you)
+      :ARG1 (s / sheep)
+      :ARG2 (i / i)
+      :mode imperative)
+
+# ::id lpp_1943.66 ::date 2012-07-24T13:09:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt But I had never drawn a sheep .
+# ::tokens ["But", "I", "had", "never", "drawn", "a", "sheep", "."]
+# ::lemmas ["but", "I", "have", "never", "draw", "a", "sheep", "."]
+# ::pos_tags ["CC", "PRP", "VBD", "RB", "VBN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_66.txt
+(c / contrast
+      :ARG2 (d / draw-01
+            :ARG0 (i / i)
+            :ARG1 (s / sheep)
+            :time (e / ever)))
+
+# ::id lpp_1943.67 ::date 2012-07-24T13:11:14 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I drew for him one of the two pictures I had drawn so often .
+# ::tokens ["So", "I", "drew", "for", "him", "1", "of", "the", "2", "pictures", "I", "had", "drawn", "so", "often", "."]
+# ::lemmas ["so", "I", "draw", "for", "he", "1", "of", "the", "2", "picture", "I", "have", "draw", "so", "often", "."]
+# ::pos_tags ["IN", "PRP", "VBD", "IN", "PRP", "CD", "IN", "DT", "CD", "NNS", "PRP", "VBD", "VBN", "RB", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "NUMBER", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "one", "value": 1}, "2": {"type": "quantity", "span": "two", "value": 2}}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_67.txt
+(c / cause-01
+      :ARG1 (d / draw-01
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (i2 / include
+                        :ARG2 (p2 / picture
+                              :ARG1-of (d2 / draw-01
+                                    :ARG0 i
+                                    :time (o / often
+                                          :degree (s / so)))
+                              :quant 2))
+                  :quant 1)
+            :ARG2 (h / he)))
+
+# ::id lpp_1943.68 ::date 2012-07-24T13:13:12 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was that of the boa constrictor from the outside .
+# ::tokens ["It", "was", "that", "of", "the", "boa", "constrictor", "from", "the", "outside", "."]
+# ::lemmas ["it", "be", "that", "of", "the", "boa", "constrictor", "from", "the", "outside", "."]
+# ::pos_tags ["PRP", "VBD", "IN", "IN", "DT", "NN", "NN", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 3, 2014 ::file lpp_1943_68.txt
+(b / boa
+      :direction (f / from
+            :op1 (o / outside))
+      :mod (c2 / constrictor))
+
+# ::id lpp_1943.69 ::date 2012-07-24T13:14:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I was astounded to hear the little fellow greet it with , " No , no , no !
+# ::tokens ["And", "I", "was", "astounded", "to", "hear", "the", "little", "fellow", "greet", "it", "with", ",", "''", "No", ",", "no", ",", "no", "!"]
+# ::lemmas ["and", "I", "be", "astounded", "to", "hear", "the", "little", "fellow", "greet", "it", "with", ",", "''", "no", ",", "no", ",", "no", "!"]
+# ::pos_tags ["CC", "PRP", "VBD", "JJ", "TO", "VB", "DT", "JJ", "JJ", "VB", "PRP", "IN", ",", "''", "UH", ",", "DT", ",", "DT", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_69.txt
+(a / and
+      :op2 (a2 / astound
+            :ARG0 (h / hear
+                  :ARG0 (i / i)
+                  :ARG1 (g / greet
+                        :ARG0 (f / fellow
+                              :mod (l / little))
+                        :ARG1 (i2 / it)
+                        :ARG3 (a3 / and
+                              :op1 (n / no)
+                              :op2 (n2 / no)
+                              :op3 (n3 / no)))
+                  :ARG2 f)
+            :ARG1 i))
+
+# ::id lpp_1943.70 ::date 2012-07-24T13:17:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt I do not want an elephant inside a boa constrictor .
+# ::tokens ["I", "do", "not", "want", "an", "elephant", "inside", "a", "boa", "constrictor", "."]
+# ::lemmas ["I", "do", "not", "want", "a", "elephant", "inside", "a", "boa", "constrictor", "."]
+# ::pos_tags ["PRP", "VBP", "RB", "VB", "DT", "NN", "IN", "DT", "NN", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_70.txt
+(w / want
+      :ARG0 (i / i)
+      :ARG1 (e / elephant
+            :location (i2 / inside
+                  :op1 (b2 / boa
+                        :mod (c2 / constrictor)))))
+
+# ::id lpp_1943.71 ::date 2012-07-24T13:18:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt A boa constrictor is a very dangerous creature , and an elephant is very cumbersome .
+# ::tokens ["A", "boa", "constrictor", "is", "a", "very", "dangerous", "creature", ",", "and", "an", "elephant", "is", "very", "cumbersome", "."]
+# ::lemmas ["a", "boa", "constrictor", "be", "a", "very", "dangerous", "creature", ",", "and", "a", "elephant", "be", "very", "cumbersome", "."]
+# ::pos_tags ["DT", "NN", "NN", "VBZ", "DT", "RB", "JJ", "NN", ",", "CC", "DT", "NN", "VBZ", "RB", "JJ", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_71.txt
+(a / and
+      :op1 (c2 / creature
+            :domain (b / boa
+                  :mod (c / constrictor))
+            :mod (d2 / dangerous))
+      :op2 (c3 / cumbersome
+            :degree (v2 / very)
+            :domain (e / elephant)))
+
+# ::id lpp_1943.72 ::date 2012-07-24T13:22:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt Where I live , everything is very small .
+# ::tokens ["Where", "I", "live", ",", "everything", "is", "very", "small", "."]
+# ::lemmas ["where", "I", "live", ",", "everything", "be", "very", "small", "."]
+# ::pos_tags ["WRB", "PRP", "VBP", ",", "NN", "VBZ", "RB", "JJ", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_72.txt
+(s / small
+      :degree (v / very)
+      :domain (e / everything)
+      :location (l2 / live-01
+            :ARG0 (i / i)))
+
+# ::id lpp_1943.73 ::date 2012-07-24T13:23:37 ::annotator ISI-AMR-05 ::preferred
+# ::snt What I need is a sheep .
+# ::tokens ["What", "I", "need", "is", "a", "sheep", "."]
+# ::lemmas ["what", "I", "need", "be", "a", "sheep", "."]
+# ::pos_tags ["WP", "PRP", "VBP", "VBZ", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_73.txt
+(n / need
+      :ARG0 (i / i)
+      :ARG1 (s / sheep))
+
+# ::id lpp_1943.74 ::date 2012-07-24T13:24:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt Draw me a sheep . "
+# ::tokens ["Draw", "me", "a", "sheep", ".", "''"]
+# ::lemmas ["draw", "I", "a", "sheep", ".", "''"]
+# ::pos_tags ["VB", "PRP", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_74.txt
+(d / draw-01
+      :ARG0 (y / you)
+      :ARG1 (s / sheep)
+      :ARG2 (i / i)
+      :mode imperative)
+
+# ::id lpp_1943.75 ::date 2012-07-24T13:25:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt So then I made a drawing .
+# ::tokens ["So", "then", "I", "made", "a", "drawing", "."]
+# ::lemmas ["so", "then", "I", "make", "a", "drawing", "."]
+# ::pos_tags ["RB", "RB", "PRP", "VBD", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_75.txt
+(c / cause-01
+      :ARG1 (d / draw-01
+            :ARG0 (i / i)
+            :time (t2 / then)))
+
+# ::id lpp_1943.76 ::date 2012-07-24T13:26:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt He looked at it carefully , then he said : " No .
+# ::tokens ["He", "looked", "at", "it", "carefully", ",", "then", "he", "said", ":", "''", "No", "."]
+# ::lemmas ["he", "look", "at", "it", "carefully", ",", "then", "he", "say", ":", "''", "no", "."]
+# ::pos_tags ["PRP", "VBD", "IN", "PRP", "RB", ",", "RB", "PRP", "VBD", ":", "''", "DT", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_76.txt
+(a / and
+      :op1 (l / look-01
+            :ARG0 (h / he)
+            :ARG1 (i / it)
+            :manner (c / careful))
+      :op2 (s / say
+            :ARG0 h
+            :ARG1 (n / no)
+            :time (t / then)))
+
+# ::id lpp_1943.77 ::date 2012-07-24T13:27:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt This sheep is already very sickly .
+# ::tokens ["This", "sheep", "is", "already", "very", "sickly", "."]
+# ::lemmas ["this", "sheep", "be", "already", "very", "sickly", "."]
+# ::pos_tags ["DT", "NN", "VBZ", "RB", "RB", "JJ", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Jul 27, 2015 ::file lpp_1943_77.txt
+(s2 / sick
+      :ARG1 (s / sheep
+            :mod (t / this))
+      :degree (v / very)
+      :time (a / already))
+
+# ::id lpp_1943.78 ::date 2012-07-24T13:28:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Make me another . "
+# ::tokens ["Make", "me", "another", ".", "''"]
+# ::lemmas ["make", "I", "another", ".", "''"]
+# ::pos_tags ["VB", "PRP", "DT", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Apr 10, 2013 ::file lpp_1943_78.txt
+(m / make-01
+      :ARG0 (y / you)
+      :ARG1 (a / another)
+      :ARG3 (i / i)
+      :mode imperative)
+
+# ::id lpp_1943.79 ::date 2012-07-24T13:29:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I made another drawing .
+# ::tokens ["So", "I", "made", "another", "drawing", "."]
+# ::lemmas ["so", "I", "make", "another", "drawing", "."]
+# ::pos_tags ["IN", "PRP", "VBD", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_79.txt
+(c / cause-01
+      :ARG1 (m / make-01
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (d / draw-01
+                        :ARG0 i)
+                  :mod (a / another))))
+
+# ::id lpp_1943.80 ::date 2012-07-24T13:29:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt My friend smiled gently and indulgently .
+# ::tokens ["My", "friend", "smiled", "gently", "and", "indulgently", "."]
+# ::lemmas ["my", "friend", "smile", "gently", "and", "indulgently", "."]
+# ::pos_tags ["PRP$", "NN", "VBD", "RB", "CC", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Apr 18, 2014 ::file lpp_1943_80.txt
+(s / smile-01
+      :ARG0 (p / person
+            :ARG0-of (h / have-rel-role
+                  :ARG1 (i / i)
+                  :ARG2 (f / friend)))
+      :manner (g / gentle)
+      :manner (i2 / indulgent))
+
+# ::id lpp_1943.81 ::date 2012-07-24T13:31:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt " You see yourself , " he said , " that this is not a sheep .
+# ::tokens ["''", "You", "see", "yourself", ",", "''", "he", "said", ",", "''", "that", "this", "is", "not", "a", "sheep", "."]
+# ::lemmas ["''", "you", "see", "yourself", ",", "''", "he", "say", ",", "''", "that", "this", "be", "not", "a", "sheep", "."]
+# ::pos_tags ["''", "PRP", "VBP", "PRP", ",", "''", "PRP", "VBD", ",", "''", "IN", "DT", "VBZ", "RB", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_81.txt
+(s / say
+      :ARG0 (h / he)
+      :ARG1 (s2 / see
+            :ARG0 (y / you)
+            :ARG1 (s4 / sheep
+                  :domain (t2 / this))))
+
+# ::id lpp_1943.82 ::date 2012-07-24T13:32:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt This is a ram .
+# ::tokens ["This", "is", "a", "ram", "."]
+# ::lemmas ["this", "be", "a", "ram", "."]
+# ::pos_tags ["DT", "VBZ", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_82.txt
+(r2 / ram
+      :domain (t2 / this))
+
+# ::id lpp_1943.83 ::date 2012-07-24T13:32:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt It has horns . "
+# ::tokens ["It", "has", "horns", ".", "''"]
+# ::lemmas ["it", "have", "horn", ".", "''"]
+# ::pos_tags ["PRP", "VBZ", "NNS", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_83.txt
+(h / have
+      :ARG0 (i / it)
+      :ARG1 (h2 / horn))
+
+# ::id lpp_1943.84 ::date 2012-07-24T13:33:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt So then I did my drawing over once more .
+# ::tokens ["So", "then", "I", "did", "my", "drawing", "over", "once", "more", "."]
+# ::lemmas ["so", "then", "I", "do", "my", "drawing", "over", "once", "more", "."]
+# ::pos_tags ["RB", "RB", "PRP", "VBD", "PRP$", "NN", "IN", "RB", "JJR", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "DATE", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Feb 23, 2016 ::file lpp_1943_84.txt
+(c / cause-01
+      :ARG1 (d / do
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (d2 / draw-01
+                        :ARG0 i))
+            :mod (o / over)
+            :mod (a / again
+                  :frequency 1)
+            :time (t2 / then)))
+
+# ::id lpp_1943.85 ::date 2012-07-24T13:34:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt But it was rejected too , just like the others .
+# ::tokens ["But", "it", "was", "rejected", "too", ",", "just", "like", "the", "others", "."]
+# ::lemmas ["but", "it", "be", "reject", "too", ",", "just", "like", "the", "other", "."]
+# ::pos_tags ["CC", "PRP", "VBD", "VBN", "RB", ",", "RB", "IN", "DT", "NNS", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon May 13, 2013 ::file lpp_1943_85.txt
+(c / contrast
+      :ARG1 (r / reject
+            :ARG1 (i / it)
+            :ARG1-of (r2 / resemble
+                  :ARG2 (o / other))
+            :mod (t / too)))
+
+# ::id lpp_1943.86 ::date 2012-07-24T13:40:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt " This one is too old .
+# ::tokens ["''", "This", "one", "is", "too", "old", "."]
+# ::lemmas ["''", "this", "one", "be", "too", "old", "."]
+# ::pos_tags ["''", "DT", "CD", "VBZ", "RB", "JJ", "."]
+# ::ner_tags ["O", "O", "NUMBER", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_86.txt
+(o2 / old
+      :degree (t2 / too)
+      :domain (o / one
+            :mod (t / this)))
+
+# ::id lpp_1943.87 ::date 2012-07-31T06:15:17 ::annotator ISI-AMR-05 ::preferred
+# ::snt I want a sheep that will live a long time . "
+# ::tokens ["I", "want", "a", "sheep", "that", "will", "live", "a", "long", "time", ".", "''"]
+# ::lemmas ["I", "want", "a", "sheep", "that", "will", "live", "a", "long", "time", ".", "''"]
+# ::pos_tags ["PRP", "VBP", "DT", "NN", "WDT", "MD", "VB", "DT", "JJ", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Jun 4, 2015 ::file lpp_1943_87.txt
+(w / want
+      :ARG0 (i / i)
+      :ARG1 (s / sheep
+            :ARG0-of (l / live-01
+                  :ARG1-of (l2 / long-03))))
+
+# ::id lpp_1943.88 ::date 2012-07-31T06:16:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt By this time my patience was exhausted , because I was in a hurry to start taking my engine apart .
+# ::tokens ["By", "this", "time", "my", "patience", "was", "exhausted", ",", "because", "I", "was", "in", "a", "hurry", "to", "start", "taking", "my", "engine", "apart", "."]
+# ::lemmas ["by", "this", "time", "my", "patience", "be", "exhaust", ",", "because", "I", "be", "in", "a", "hurry", "to", "start", "take", "my", "engine", "apart", "."]
+# ::pos_tags ["IN", "DT", "NN", "PRP$", "NN", "VBD", "VBN", ",", "IN", "PRP", "VBD", "IN", "DT", "NN", "TO", "VB", "VBG", "PRP$", "NN", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_88.txt
+(e / exhaust
+      :ARG1 (p / patient-01
+            :ARG1 (i / i))
+      :ARG1-of (c / cause-01
+            :ARG0 (h / hurry
+                  :ARG1 i
+                  :ARG2 (s / start
+                        :ARG0 i
+                        :ARG1 (d / disassemble
+                              :ARG0 i
+                              :ARG1 (e2 / engine
+                                    :poss i)))))
+      :time (b / by
+            :op1 (t / time
+                  :mod (t2 / this))))
+
+# ::id lpp_1943.89 ::date 2012-07-31T06:21:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I tossed off this drawing .
+# ::tokens ["So", "I", "tossed", "off", "this", "drawing", "."]
+# ::lemmas ["so", "I", "toss", "off", "this", "drawing", "."]
+# ::pos_tags ["IN", "PRP", "VBD", "RP", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_89.txt
+(c / cause-01
+      :ARG1 (t / toss-out
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (d / draw-01
+                        :ARG0 i)
+                  :mod (t3 / this))
+            :direction (o / off)))
+
+# ::id lpp_1943.90 ::date 2012-07-31T06:25:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I threw out an explanation with it .
+# ::tokens ["And", "I", "threw-out", "an", "explanation", "with", "it", "."]
+# ::lemmas ["and", "I", "throw-out", "a", "explanation", "with", "it", "."]
+# ::pos_tags ["CC", "PRP", "COMP", "DT", "NN", "IN", "PRP", "."]
+# ::ner_tags ["O", "O", "0", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_90.txt
+(a / and
+      :op2 (e / explain
+            :ARG0 (i / i)
+            :ARG1 (i3 / it)))
+
+# ::id lpp_1943.91 ::date 2012-07-31T06:32:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " This is only his box .
+# ::tokens ["''", "This", "is", "only", "his", "box", "."]
+# ::lemmas ["''", "this", "be", "only", "he", "box", "."]
+# ::pos_tags ["''", "DT", "VBZ", "RB", "PRP$", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_91.txt
+(b / box
+      :domain (t / this)
+      :mod (o / only)
+      :poss (h / he))
+
+# ::id lpp_1943.92 ::date 2012-07-31T06:48:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt The sheep you asked for is inside . "
+# ::tokens ["The", "sheep", "you", "asked", "for", "is", "inside", ".", "''"]
+# ::lemmas ["the", "sheep", "you", "ask", "for", "be", "inside", ".", "''"]
+# ::pos_tags ["DT", "NN", "PRP", "VBD", "IN", "VBZ", "RB", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue May 7, 2013 ::file lpp_1943_92.txt
+(b / be-located-at
+      :ARG1 (s2 / sheep
+            :ARG1-of (a / ask
+                  :ARG0 (y / you)))
+      :ARG2 (i2 / inside))
+
+# ::id lpp_1943.93 ::date 2012-07-31T06:50:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt I was very surprised to see a light break over the face of my young judge : " That is exactly the way I wanted it !
+# ::tokens ["I", "was", "very", "surprised", "to", "see", "a", "light", "break", "over", "the", "face", "of", "my", "young", "judge", ":", "''", "That", "is", "exactly", "the", "way", "I", "wanted", "it", "!"]
+# ::lemmas ["I", "be", "very", "surprised", "to", "see", "a", "light", "break", "over", "the", "face", "of", "my", "young", "judge", ":", "''", "that", "be", "exactly", "the", "way", "I", "want", "it", "!"]
+# ::pos_tags ["PRP", "VBD", "RB", "JJ", "TO", "VB", "DT", "JJ", "NN", "IN", "DT", "NN", "IN", "PRP$", "JJ", "NN", ":", "''", "DT", "VBZ", "RB", "DT", "NN", "PRP", "VBD", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Apr 30, 2013 ::file lpp_1943_93.txt
+(a / and
+      :op1 (s / surprise-01
+            :ARG0 (s2 / see
+                  :ARG0 (i / i)
+                  :ARG1 (b / break-13
+                        :ARG1 (l / light)
+                        :location (o / over
+                              :op1 (f / face
+                                    :part-of (p / person
+                                          :ARG0-of (j / judge)
+                                          :mod (y / young)
+                                          :poss i)))))
+            :ARG1 i
+            :degree (v / very))
+      :op2 (s3 / say
+            :ARG1 (w / way
+                  :domain (w2 / want
+                        :ARG0 p
+                        :ARG1 (i2 / it))
+                  :mod (e / exact))))
+
+# ::id lpp_1943.94 ::date 2012-07-31T06:59:45 ::annotator ISI-AMR-05 ::preferred
+# ::snt Do you think that this sheep will have to have a great deal of grass ? "
+# ::tokens ["Do", "you", "think", "that", "this", "sheep", "will", "have-to", "have", "a", "great", "deal", "of", "grass", "?", "''"]
+# ::lemmas ["do", "you", "think", "that", "this", "sheep", "will", "have-to", "have", "a", "great", "deal", "of", "grass", "?", "''"]
+# ::pos_tags ["VBP", "PRP", "VB", "IN", "DT", "NN", "MD", "COMP", "VB", "DT", "JJ", "NN", "IN", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_94.txt
+(t / think
+      :ARG0 (y / you)
+      :ARG1 (o / obligate
+            :ARG2 (h / have
+                  :ARG0 (s / sheep
+                        :mod (t2 / this))
+                  :ARG1 (g / grass
+                        :quant (d / deal
+                              :mod (g2 / great)))))
+      :mode interrogative)
+
+# ::id lpp_1943.95 ::date 2012-07-31T07:04:48 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Why ? "
+# ::tokens ["''", "Why", "?", "''"]
+# ::lemmas ["''", "why", "?", "''"]
+# ::pos_tags ["''", "WRB", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_95.txt
+(c / cause-01
+      :ARG0 (a / amr-unknown))
+
+# ::id lpp_1943.96 ::date 2012-07-31T07:06:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Because where I live everything is very small ... "
+# ::tokens ["''", "Because", "where", "I", "live", "everything", "is", "very", "small", "...", "''"]
+# ::lemmas ["''", "because", "where", "I", "live", "everything", "be", "very", "small", "...", "''"]
+# ::pos_tags ["''", "IN", "WRB", "PRP", "VBP", "NN", "VBZ", "RB", "JJ", ":", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_96.txt
+(c / cause-01
+      :ARG0 (s / small
+            :degree (v / very)
+            :domain (e / everything
+                  :location (l / live-01
+                        :ARG0 (i / i)))))
+
+# ::id lpp_1943.97 ::date 2012-07-31T07:08:22 ::annotator ISI-AMR-05 ::preferred
+# ::snt " There will surely be enough grass for him , "
+# ::tokens ["''", "There", "will", "surely", "be", "enough", "grass", "for", "him", ",", "''"]
+# ::lemmas ["''", "there", "will", "surely", "be", "enough", "grass", "for", "he", ",", "''"]
+# ::pos_tags ["''", "EX", "MD", "RB", "VB", "JJ", "NN", "IN", "PRP", ",", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Jul 9, 2015 ::file lpp_1943_97.txt
+(b / benefit-01
+      :ARG0 (g3 / grass
+            :mod (e3 / enough
+                  :ARG1-of (s / sure-02)))
+      :ARG1 (h2 / he))
+
+# ::id lpp_1943.98 ::date 2012-07-31T07:10:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt I said .
+# ::tokens ["I", "said", "."]
+# ::lemmas ["I", "say", "."]
+# ::pos_tags ["PRP", "VBD", "."]
+# ::ner_tags ["O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_98.txt
+(s / say
+      :ARG0 (i / i))
+
+# ::id lpp_1943.99 ::date 2012-07-31T07:10:44 ::annotator ISI-AMR-05 ::preferred
+# ::snt " It is a very small sheep that I have given you . "
+# ::tokens ["''", "It", "is", "a", "very", "small", "sheep", "that", "I", "have", "given", "you", ".", "''"]
+# ::lemmas ["''", "it", "be", "a", "very", "small", "sheep", "that", "I", "have", "give", "you", ".", "''"]
+# ::pos_tags ["''", "PRP", "VBZ", "DT", "RB", "JJ", "NN", "IN", "PRP", "VBP", "VBN", "PRP", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_99.txt
+(g / give
+      :ARG0 (i / i)
+      :ARG1 (s / sheep
+            :mod (s2 / small
+                  :degree (v / very)))
+      :ARG2 (y / you))
+
+# ::id lpp_1943.100 ::date 2012-07-31T07:11:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt He bent his head over the drawing : " Not so small that -- Look !
+# ::tokens ["He", "bent", "his", "head", "over", "the", "drawing", ":", "''", "Not", "so", "small", "that", "--", "Look", "!"]
+# ::lemmas ["he", "bent", "he", "head", "over", "the", "drawing", ":", "''", "not", "so", "small", "that", "--", "look", "!"]
+# ::pos_tags ["PRP", "JJ", "PRP$", "NN", "IN", "DT", "NN", ":", "''", "RB", "RB", "JJ", "DT", ":", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_100.txt
+(a / and
+      :op2 (b / bend
+            :ARG1 (h2 / head
+                  :location (o / over
+                        :op1 (p / picture
+                              :ARG1-of (d / draw-01)))
+                  :part-of (h3 / he)))
+      :op2 (s / say
+            :ARG0 h3
+            :ARG1 (l / look-01
+                  :ARG0 (y / you)
+                  :ARG1 (s2 / small
+                        :degree (s3 / so)
+                        :domain (t2 / that))
+                  :mode imperative)))
+
+# ::id lpp_1943.101 ::date 2012-07-31T07:21:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt He has gone to sleep ... "
+# ::tokens ["He", "has", "gone", "to", "sleep", "...", "''"]
+# ::lemmas ["he", "have", "go", "to", "sleep", "...", "''"]
+# ::pos_tags ["PRP", "VBZ", "VBN", "TO", "VB", ":", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_101.txt
+(s / sleep
+      :ARG0 (h / he))
+
+# ::id lpp_1943.102 ::date 2012-07-31T07:25:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt And that is how I made the acquaintance of the little prince .
+# ::tokens ["And", "that", "is", "how", "I", "made", "the", "acquaintance", "of", "the", "little", "prince", "."]
+# ::lemmas ["and", "that", "be", "how", "I", "make", "the", "acquaintance", "of", "the", "little", "prince", "."]
+# ::pos_tags ["CC", "DT", "VBZ", "WRB", "PRP", "VBD", "DT", "NN", "IN", "DT", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TITLE", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_102.txt
+(a / and
+      :op2 (a2 / acquaint
+            :ARG1 (i / i)
+            :ARG2 (p / prince
+                  :mod (l / little))
+            :manner (t / that)))
+
+# ::id lpp_1943.103 ::date 2012-07-31T07:37:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 3 .
+# ::tokens ["Chapter", "1", "."]
+# ::lemmas ["chapter", "1", "."]
+# ::pos_tags ["NN", "CD", "."]
+# ::ner_tags ["O", "NUMBER", "O"]
+# ::abstract_map {"1": {"type": "quantity", "span": "3", "value": 3}}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_103.txt
+(c2 / chapter
+      :mod 1)
+
+# ::id lpp_1943.104 ::date 2012-07-31T07:38:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt It took me a long time to learn where he came from .
+# ::tokens ["It", "took", "me", "a", "long", "time", "to", "learn", "where", "he", "came", "from", "."]
+# ::lemmas ["it", "take", "I", "a", "long", "time", "to", "learn", "where", "he", "come", "from", "."]
+# ::pos_tags ["PRP", "VBD", "PRP", "DT", "JJ", "NN", "TO", "VB", "WRB", "PRP", "VBD", "IN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Dec 7, 2015 ::file lpp_1943_104.txt
+(t2 / take-10
+      :ARG1 (t / temporal-quantity
+            :ARG2-of (l / long-03
+                  :ARG1 (l2 / learn
+                        :ARG0 (i / i)
+                        :ARG1 (p / place
+                              :ARG3-of (c / come
+                                    :ARG1 (h / he)))))))
+
+# ::id lpp_1943.105 ::date 2012-07-31T07:42:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt The little prince , who asked me so many questions , never seemed to hear the ones I asked him .
+# ::tokens ["The", "little", "prince", ",", "who", "asked", "me", "so", "many", "questions", ",", "never", "seemed", "to", "hear", "the", "ones", "I", "asked", "him", "."]
+# ::lemmas ["the", "little", "prince", ",", "who", "ask", "I", "so", "many", "question", ",", "never", "seem", "to", "hear", "the", "one", "I", "ask", "he", "."]
+# ::pos_tags ["DT", "JJ", "NN", ",", "WP", "VBD", "PRP", "RB", "JJ", "NNS", ",", "RB", "VBD", "TO", "VB", "DT", "NNS", "PRP", "VBD", "PRP", "."]
+# ::ner_tags ["O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Apr 8, 2015 ::file lpp_1943_105.txt
+(s / seem
+      :ARG1 (h / hear
+            :ARG0 (p / prince
+                  :ARG0-of (q / question-01
+                        :ARG2 (i / i)
+                        :quant (m / many
+                              :degree (s2 / so)))
+                  :mod (l / little))
+            :ARG1 (o / one
+                  :ARG1-of (a2 / ask
+                        :ARG0 i
+                        :ARG2 p))
+            :time (e2 / ever)))
+
+# ::id lpp_1943.106 ::date 2012-07-31T08:02:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was from words dropped by chance that , little by little , everything was revealed to me .
+# ::tokens ["It", "was-from", "words", "dropped-by", "chance", "that", ",", "little", "by", "little", ",", "everything", "was", "revealed", "to", "me", "."]
+# ::lemmas ["it", "be-from", "word", "drop-by", "chance", "that", ",", "little", "by", "little", ",", "everything", "be", "reveal", "to", "I", "."]
+# ::pos_tags ["PRP", "COMP", "NNS", "COMP", "NN", "IN", ",", "RB", "IN", "RB", ",", "NN", "VBD", "VBN", "TO", "PRP", "."]
+# ::ner_tags ["O", "0", "O", "0", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Jul 29, 2015 ::file lpp_1943_106.txt
+(r / reveal
+      :ARG0 (w / word
+            :ARG1-of (d / drop-06
+                  :ARG1-of (c / chance)))
+      :ARG1 (e / everything)
+      :ARG2 (i / i)
+      :manner (l / little-by-little))
+
+# ::id lpp_1943.107 ::date 2012-07-31T08:05:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt The first time he saw my airplane , for instance ( I shall not draw my airplane ; that would be much too complicated for me ) , he asked me : " What is that object ? "
+# ::tokens ["The", "ORDINAL_ENTITY_1", "time", "he", "saw", "my", "airplane", ",", "for", "instance", "(", "I", "shall", "not", "draw", "my", "airplane", ";", "that", "would", "be", "much", "too", "complicated", "for", "me", ")", ",", "he", "asked", "me", ":", "''", "What", "is", "that", "object", "?", "''"]
+# ::lemmas ["the", "ORDINAL_ENTITY_1", "time", "he", "see", "my", "airplane", ",", "for", "instance", "(", "I", "shall", "not", "draw", "my", "airplane", ";", "that", "would", "be", "much", "too", "complicate", "for", "I", ")", ",", "he", "ask", "I", ":", "''", "what", "be", "that", "object", "?", "''"]
+# ::pos_tags ["DT", "JJ", "NN", "PRP", "VBD", "PRP$", "NN", ",", "IN", "NN", "CD", "PRP", "MD", "RB", "VB", "PRP$", "NN", ":", "DT", "MD", "VB", "RB", "RB", "VBN", "IN", "PRP", "SYM", ",", "PRP", "VBD", "PRP", ":", "''", "WP", "VBZ", "IN", "NN", ".", "''"]
+# ::ner_tags ["O", "ORDINAL_ENTITY", "O", "O", "O", "O", "O", "O", "O", "O", "NUMBER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"ORDINAL_ENTITY_1": {"type": "ordinal-entity", "span": "1", "ops": ["1"]}}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_107.txt
+(a / ask
+      :ARG0 (h / he)
+      :ARG1 (o / object
+            :domain (a2 / amr-unknown)
+            :mod (t / that))
+      :ARG2 (i / i)
+      :time (s / see
+            :ARG0 h
+            :ARG1 (a3 / airplane
+                  :ARG1-of (d / draw-01
+                        :ARG0 i
+                        :ARG1-of (c / cause-01
+                              :ARG0 (c2 / complicate
+                                    :ARG2 i
+                                    :degree (t3 / too
+                                          :degree (m / much)))))
+                  :poss i)
+            :ord (o2 / ORDINAL_ENTITY_1)))
+
+# ::id lpp_1943.108 ::date 2012-07-31T08:12:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is not an object .
+# ::tokens ["''", "That", "is", "not", "an", "object", "."]
+# ::lemmas ["''", "that", "be", "not", "a", "object", "."]
+# ::pos_tags ["''", "DT", "VBZ", "RB", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_108.txt
+(o / object
+      :domain (t / that))
+
+# ::id lpp_1943.109 ::date 2012-07-31T08:14:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt It flies .
+# ::tokens ["It", "flies", "."]
+# ::lemmas ["it", "fly", "."]
+# ::pos_tags ["PRP", "VBZ", "."]
+# ::ner_tags ["O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_109.txt
+(f / fly
+      :ARG1 (i / it))
+
+# ::id lpp_1943.110 ::date 2012-07-31T08:14:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is an airplane .
+# ::tokens ["It", "is", "an", "airplane", "."]
+# ::lemmas ["it", "be", "a", "airplane", "."]
+# ::pos_tags ["PRP", "VBZ", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_110.txt
+(a / airplane
+      :domain (i / it))
+
+# ::id lpp_1943.111 ::date 2012-07-31T08:14:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is my airplane . "
+# ::tokens ["It", "is", "my", "airplane", ".", "''"]
+# ::lemmas ["it", "be", "my", "airplane", ".", "''"]
+# ::pos_tags ["PRP", "VBZ", "PRP$", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_111.txt
+(a2 / airplane
+      :domain (i / it)
+      :poss (i2 / i))
+
+# ::id lpp_1943.112 ::date 2012-07-31T08:15:30 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I was proud to have him learn that I could fly .
+# ::tokens ["And", "I", "was", "proud", "to", "have", "him", "learn", "that", "I", "could", "fly", "."]
+# ::lemmas ["and", "I", "be", "proud", "to", "have", "he", "learn", "that", "I", "could", "fly", "."]
+# ::pos_tags ["CC", "PRP", "VBD", "JJ", "TO", "VB", "PRP", "VB", "IN", "PRP", "MD", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_112.txt
+(a / and
+      :op2 (p / pride-01
+            :ARG0 (i / i)
+            :ARG2 (l / learn
+                  :ARG0 (h2 / he)
+                  :ARG1 (p2 / possible
+                        :ARG1 (f / fly
+                              :ARG1 i)))))
+
+# ::id lpp_1943.113 ::date 2012-07-31T08:19:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt He cried out , then : " What !
+# ::tokens ["He", "cried-out", ",", "then", ":", "''", "What", "!"]
+# ::lemmas ["he", "cry-out", ",", "then", ":", "''", "what", "!"]
+# ::pos_tags ["PRP", "COMP", ",", "RB", ":", "''", "WDT", "."]
+# ::ner_tags ["O", "0", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_113.txt
+(c / cry-out
+      :ARG0 (h / he)
+      :ARG1 (s / string-entity
+            :value "what")
+      :time (t / then))
+
+# ::id lpp_1943.114 ::date 2012-07-31T08:22:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt You dropped down from the sky ? "
+# ::tokens ["You", "dropped", "down", "from", "the", "sky", "?", "''"]
+# ::lemmas ["you", "drop", "down", "from", "the", "sky", "?", "''"]
+# ::pos_tags ["PRP", "VBD", "RP", "IN", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_114.txt
+(d / drop-01
+      :ARG1 (y / you)
+      :ARG3 (s / sky)
+      :direction (d2 / down)
+      :mode interrogative)
+
+# ::id lpp_1943.115 ::date 2012-07-31T08:24:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Yes , "
+# ::tokens ["''", "Yes", ",", "''"]
+# ::lemmas ["''", "yes", ",", "''"]
+# ::pos_tags ["''", "UH", ",", "''"]
+# ::ner_tags ["O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed May 1, 2013 ::file lpp_1943_115.txt
+(y2 / yes)
+
+# ::id lpp_1943.116 ::date 2012-07-31T08:35:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt I answered , modestly .
+# ::tokens ["I", "answered", ",", "modestly", "."]
+# ::lemmas ["I", "answer", ",", "modestly", "."]
+# ::pos_tags ["PRP", "VBD", ",", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_116.txt
+(a / answer-01
+      :ARG0 (i / i)
+      :manner (m / modest))
+
+# ::id lpp_1943.117 ::date 2012-07-31T08:38:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Oh !
+# ::tokens ["''", "Oh", "!"]
+# ::lemmas ["''", "oh", "!"]
+# ::pos_tags ["''", "UH", "."]
+# ::ner_tags ["O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed May 15, 2013 ::file lpp_1943_117.txt
+(o / oh
+      :mode expressive)
+
+# ::id lpp_1943.118 ::date 2012-07-31T08:38:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt That is funny ! "
+# ::tokens ["That", "is", "funny", "!", "''"]
+# ::lemmas ["that", "be", "funny", "!", "''"]
+# ::pos_tags ["DT", "VBZ", "JJ", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_118.txt
+(f2 / funny
+      :domain (t2 / that))
+
+# ::id lpp_1943.119 ::date 2012-07-31T08:39:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt And the little prince broke into a lovely peal of laughter , which irritated me very much .
+# ::tokens ["And", "the", "little", "prince", "broke", "into", "a", "lovely", "peal", "of", "laughter", ",", "which", "irritated", "me", "very", "much", "."]
+# ::lemmas ["and", "the", "little", "prince", "break", "into", "a", "lovely", "peal", "of", "laughter", ",", "which", "irritated", "I", "very", "much", "."]
+# ::pos_tags ["CC", "DT", "JJ", "NN", "VBD", "IN", "DT", "JJ", "NN", "IN", "NN", ",", "WDT", "JJ", "PRP", "RB", "RB", "."]
+# ::ner_tags ["O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon May 13, 2013 ::file lpp_1943_119.txt
+(a / and
+      :op2 (b / break-in-17
+            :ARG0 (p / prince
+                  :mod (l / little))
+            :ARG0-of (i / irritate
+                  :ARG1 (i2 / i)
+                  :degree (m / much
+                        :degree (v / very)))
+            :ARG1 (l2 / laugh
+                  :quant (p2 / peal
+                        :mod (l3 / lovely)))))
+
+# ::id lpp_1943.120 ::date 2012-07-31T08:41:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt I like my misfortunes to be taken seriously .
+# ::tokens ["I", "like", "my", "misfortunes", "to", "be", "taken", "seriously", "."]
+# ::lemmas ["I", "like", "my", "misfortune", "to", "be", "take", "seriously", "."]
+# ::pos_tags ["PRP", "VBP", "PRP$", "NNS", "TO", "VB", "VBN", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_120.txt
+(l / like-02
+      :ARG0 (i / i)
+      :ARG1 (t / take-04
+            :ARG1 (m / misfortune
+                  :poss i)
+            :manner (s / serious-01)))
+
+# ::id lpp_1943.121 ::date 2012-07-31T08:45:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then he added : " So you , too , come from the sky !
+# ::tokens ["Then", "he", "added", ":", "''", "So", "you", ",", "too", ",", "come", "from", "the", "sky", "!"]
+# ::lemmas ["then", "he", "add", ":", "''", "so", "you", ",", "too", ",", "come", "from", "the", "sky", "!"]
+# ::pos_tags ["RB", "PRP", "VBD", ":", "''", "IN", "PRP", ",", "RB", ",", "VBN", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_121.txt
+(a / add-01
+      :ARG0 (h / he)
+      :ARG1 (c2 / cause-01
+            :ARG1 (c / come
+                  :ARG1 (y / you)
+                  :ARG3 (s2 / sky)
+                  :mod (t2 / too)))
+      :time (t / then))
+
+# ::id lpp_1943.122 ::date 2012-07-31T08:48:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt Which is your planet ? "
+# ::tokens ["Which", "is", "your", "planet", "?", "''"]
+# ::lemmas ["which", "be", "you", "planet", "?", "''"]
+# ::pos_tags ["WDT", "VBZ", "PRP$", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_122.txt
+(p / planet
+      :domain (a / amr-unknown)
+      :poss (y / you))
+
+# ::id lpp_1943.123 ::date 2012-07-31T08:49:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt At that moment I caught a gleam of light in the impenetrable mystery of his presence ; and I demanded , abruptly : " Do you come from another planet ? "
+# ::tokens ["At", "that", "moment", "I", "caught", "a", "gleam", "of", "light", "in", "the", "impenetrable", "mystery", "of", "his", "presence", ";", "and", "I", "demanded", ",", "abruptly", ":", "''", "Do", "you", "come", "from", "another", "planet", "?", "''"]
+# ::lemmas ["at", "that", "moment", "I", "catch", "a", "gleam", "of", "light", "in", "the", "impenetrable", "mystery", "of", "he", "presence", ";", "and", "I", "demand", ",", "abruptly", ":", "''", "do", "you", "come", "from", "another", "planet", "?", "''"]
+# ::pos_tags ["IN", "DT", "NN", "PRP", "VBD", "DT", "NN", "IN", "NN", "IN", "DT", "JJ", "NN", "IN", "PRP$", "NN", ":", "CC", "PRP", "VBD", ",", "RB", ":", "''", "VBP", "PRP", "VB", "IN", "DT", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_123.txt
+(a / and
+      :op1 (c / catch-03
+            :ARG0 (i / i)
+            :ARG1 (g / gleam
+                  :consist-of (l / light)
+                  :location (m / mystery
+                        :ARG1-of (p3 / penetrate
+                              :ARG1-of (p2 / possible))
+                        :domain (p / present-02
+                              :ARG1 (h / he))))
+            :time (m2 / moment
+                  :mod (t / that)))
+      :op2 (d / demand
+            :ARG0 i
+            :ARG1 (c2 / come
+                  :ARG1 (y / you)
+                  :ARG3 (p4 / planet
+                        :mod (a3 / another))
+                  :mode interrogative)
+            :manner (a2 / abrupt)))
+
+# ::id lpp_1943.124 ::date 2012-07-31T08:57:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt But he did not reply .
+# ::tokens ["But", "he", "did", "not", "reply", "."]
+# ::lemmas ["but", "he", "do", "not", "reply", "."]
+# ::pos_tags ["CC", "PRP", "VBD", "RB", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_124.txt
+(c / contrast
+      :ARG2 (r / reply
+            :ARG0 (h / he)))
+
+# ::id lpp_1943.125 ::date 2012-07-31T08:57:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt He tossed his head gently , without taking his eyes from my plane : " It is true that on that you can n't have come from very far away ... "
+# ::tokens ["He", "tossed", "his", "head", "gently", ",", "without", "taking", "his", "eyes", "from", "my", "plane", ":", "''", "It", "is", "true", "that", "on", "that", "you", "can", "n't", "have", "come", "from", "very", "far", "away", "...", "''"]
+# ::lemmas ["he", "toss", "he", "head", "gently", ",", "without", "take", "he", "eye", "from", "my", "plane", ":", "''", "it", "be", "true", "that", "on", "that", "you", "can", "not", "have", "come", "from", "very", "far", "away", "...", "''"]
+# ::pos_tags ["PRP", "VBD", "PRP$", "NN", "RB", ",", "IN", "VBG", "PRP$", "NNS", "IN", "PRP$", "NN", ":", "''", "PRP", "VBZ", "JJ", "IN", "IN", "DT", "PRP", "MD", "RB", "VB", "VBN", "IN", "RB", "RB", "RB", ":", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Nov 3, 2014 ::file lpp_1943_125.txt
+(a / and
+      :op1 (t / toss
+            :ARG0 (h / he)
+            :ARG1 (h2 / head
+                  :part-of h)
+            :manner (g / gentle)
+            :manner (t2 / take-away
+                  :ARG0 h
+                  :ARG1 (e / eye
+                        :part-of h)
+                  :direction (p2 / plane
+                        :poss (i / i))))
+      :op2 (s / say
+            :ARG0 h
+            :ARG1 (p / possible
+                  :ARG1 (c / come
+                        :ARG1 (y / you)
+                        :ARG3 (a2 / away
+                              :extent (f / far
+                                    :degree (v / very)))
+                        :manner p2))))
+
+# ::id lpp_1943.126 ::date 2012-07-31T10:09:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt And he sank into a reverie , which lasted a long time .
+# ::tokens ["And", "he", "sank", "into", "a", "reverie", ",", "which", "lasted", "a", "long", "time", "."]
+# ::lemmas ["and", "he", "sink", "into", "a", "reverie", ",", "which", "last", "a", "long", "time", "."]
+# ::pos_tags ["CC", "PRP", "VBD", "IN", "DT", "NN", ",", "WDT", "VBD", "DT", "JJ", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Jun 4, 2015 ::file lpp_1943_126.txt
+(a / and
+      :op2 (s / sink
+            :ARG0 (h / he)
+            :ARG4 (r / reverie
+                  :ARG1-of (l / long-03))))
+
+# ::id lpp_1943.127 ::date 2012-07-31T10:12:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then , taking my sheep out of his pocket , he buried himself in the contemplation of his treasure .
+# ::tokens ["Then", ",", "taking", "my", "sheep", "out", "of", "his", "pocket", ",", "he", "buried", "himself", "in", "the", "contemplation", "of", "his", "treasure", "."]
+# ::lemmas ["then", ",", "take", "my", "sheep", "out", "of", "he", "pocket", ",", "he", "bury", "himself", "in", "the", "contemplation", "of", "he", "treasure", "."]
+# ::pos_tags ["RB", ",", "VBG", "PRP$", "NN", "IN", "IN", "PRP$", "NN", ",", "PRP", "VBD", "PRP", "IN", "DT", "NN", "IN", "PRP$", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_127.txt
+(b / bury
+      :ARG0 (h / he)
+      :ARG1 h
+      :ARG2 (c / contemplate
+            :ARG0 h
+            :ARG1 (t / treasure
+                  :poss h))
+      :time (t2 / take-out
+            :ARG0 h
+            :ARG1 (s / sheep
+                  :poss (i / i)
+                  :source (p / pocket
+                        :poss h)))
+      :time (t3 / then))
+
+# ::id lpp_1943.128 ::date 2012-07-31T10:17:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt You can imagine how my curiosity was aroused by this half - confidence about the " other planets . "
+# ::tokens ["You", "can", "imagine", "how", "my", "curiosity", "was", "aroused", "by", "this", "half", "-", "confidence", "about", "the", "''", "other", "planets", ".", "''"]
+# ::lemmas ["you", "can", "imagine", "how", "my", "curiosity", "be", "arouse", "by", "this", "half", "-", "confidence", "about", "the", "''", "other", "planet", ".", "''"]
+# ::pos_tags ["PRP", "MD", "VB", "WRB", "PRP$", "NN", "VBD", "VBN", "IN", "DT", "NN", ":", "NN", "IN", "DT", "''", "JJ", "NNS", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon May 4, 2015 ::file lpp_1943_128.txt
+(p / possible
+      :ARG1 (i2 / imagine
+            :ARG0 (y / you)
+            :ARG1 (a / arouse
+                  :ARG0 (c4 / confidence
+                        :degree (h2 / half)
+                        :poss (h / he)
+                        :topic (p3 / planet
+                              :mod (o2 / other)))
+                  :ARG1 (c / curious
+                        :ARG1 (i / i)))))
+
+# ::id lpp_1943.129 ::date 2012-07-31T10:28:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt I made a great effort , therefore , to find out more on this subject .
+# ::tokens ["I", "made", "a", "great", "effort", ",", "therefore", ",", "to", "find-out", "more", "on", "this", "subject", "."]
+# ::lemmas ["I", "make", "a", "great", "effort", ",", "therefore", ",", "to", "find-out", "more", "on", "this", "subject", "."]
+# ::pos_tags ["PRP", "VBD", "DT", "JJ", "NN", ",", "RB", ",", "TO", "COMP", "RBR", "IN", "DT", "NN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "0", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Thu Jan 21, 2016 ::file lpp_1943_129.txt
+(c / cause-01
+      :ARG1 (e / effort
+            :ARG0 (i / i)
+            :ARG1 (f / find-out
+                  :ARG0 i
+                  :ARG1 (i2 / information
+                        :quant (m2 / more)
+                        :topic (s / subject
+                              :mod (t2 / this))))
+            :mod (g / great)))
+
+# ::id lpp_1943.130 ::date 2012-07-31T10:45:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt " My little man , where do you come from ?
+# ::tokens ["''", "My", "little", "man", ",", "where", "do", "you", "come", "from", "?"]
+# ::lemmas ["''", "my", "little", "man", ",", "where", "do", "you", "come", "from", "?"]
+# ::pos_tags ["''", "PRP$", "JJ", "NN", ",", "WRB", "VBP", "PRP", "VB", "IN", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_130.txt
+(s / say
+      :ARG1 (c / come
+            :ARG1 (y / you)
+            :ARG3 (a / amr-unknown))
+      :ARG2 (m / man
+            :mod (l / little)
+            :poss (i / i)))
+
+# ::id lpp_1943.131 ::date 2012-07-31T10:46:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt What is this ' where I live , ' of which you speak ?
+# ::tokens ["What", "is", "this", "'", "where", "I", "live", ",", "'", "of", "which", "you", "speak", "?"]
+# ::lemmas ["what", "be", "this", "'", "where", "I", "live", ",", "'", "of", "which", "you", "speak", "?"]
+# ::pos_tags ["WP", "VBZ", "DT", "''", "WRB", "PRP", "VBP", ",", "''", "IN", "WDT", "PRP", "VB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_131.txt
+(l / live-01
+      :ARG0 (y / you)
+      :location (p / place
+            :ARG1-of (s / speak
+                  :ARG0 y)
+            :domain (a / amr-unknown)))
+
+# ::id lpp_1943.132 ::date 2012-07-31T10:49:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt Where do you want to take your sheep ? "
+# ::tokens ["Where", "do", "you", "want", "to", "take", "your", "sheep", "?", "''"]
+# ::lemmas ["where", "do", "you", "want", "to", "take", "you", "sheep", "?", "''"]
+# ::pos_tags ["WRB", "VBP", "PRP", "VB", "TO", "VB", "PRP$", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon May 25, 2015 ::file lpp_1943_132.txt
+(w / want
+      :ARG0 (y / you)
+      :ARG1 (t / take
+            :ARG0 y
+            :ARG1 (s / sheep
+                  :poss y)
+            :ARG3 (a / amr-unknown)))
+
+# ::id lpp_1943.133 ::date 2012-07-31T10:49:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt After a reflective silence he answered : " The thing that is so good about the box you have given me is that at night he can use it as his house . "
+# ::tokens ["After", "a", "reflective", "silence", "he", "answered", ":", "''", "The", "thing", "that", "is", "so", "good", "about", "the", "box", "you", "have", "given", "me", "is", "that", "at", "DATE_ATTRS_1", "he", "can", "use", "it", "as", "his", "house", ".", "''"]
+# ::lemmas ["after", "a", "reflective", "silence", "he", "answer", ":", "''", "the", "thing", "that", "be", "so", "good", "about", "the", "box", "you", "have", "give", "I", "be", "that", "at", "DATE_ATTRS_1", "he", "can", "use", "it", "as", "he", "house", ".", "''"]
+# ::pos_tags ["IN", "DT", "JJ", "NN", "PRP", "VBD", ":", "''", "DT", "NN", "WDT", "VBZ", "RB", "JJ", "IN", "DT", "NN", "PRP", "VBP", "VBN", "PRP", "VBZ", "IN", "IN", "NNP", "PRP", "MD", "VB", "PRP", "IN", "PRP$", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DATE_ATTRS", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"DATE_ATTRS_1": {"type": "date-entity", "span": "night", "attrs": {}, "edges": {"dayperiod": "night"}}}
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_133.txt
+(a / answer-01
+      :ARG0 (h / he)
+      :ARG1 (t / thing
+            :ARG1-of (g / good-02
+                  :degree (s2 / so))
+            :domain (p / possible
+                  :ARG1 (u / use
+                        :ARG0 (h2 / he)
+                        :ARG1 (b / box
+                              :ARG1-of (g2 / give
+                                    :ARG0 (y / you)
+                                    :ARG2 h))
+                        :ARG2 (h3 / house
+                              :poss h2)
+                        :time (d / DATE_ATTRS_1)))
+            :topic b)
+      :time (a2 / after
+            :op1 (s / silent
+                  :mod (r / reflect-02))))
+
+# ::id lpp_1943.134 ::date 2012-07-31T10:54:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is so .
+# ::tokens ["''", "That", "is", "so", "."]
+# ::lemmas ["''", "that", "be", "so", "."]
+# ::pos_tags ["''", "DT", "VBZ", "RB", "."]
+# ::ner_tags ["O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_134.txt
+(s / so
+      :domain (t / that))
+
+# ::id lpp_1943.135 ::date 2012-07-31T10:55:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt And if you are good I will give you a string , too , so that you can tie him during the day , and a post to tie him to . "
+# ::tokens ["And", "if", "you", "are", "good", "I", "will", "give", "you", "a", "string", ",", "too", ",", "so", "that", "you", "can", "tie", "him", "during", "the", "DATE_ATTRS_1", ",", "and", "a", "post", "to", "tie", "him", "to", ".", "''"]
+# ::lemmas ["and", "if", "you", "be", "good", "I", "will", "give", "you", "a", "string", ",", "too", ",", "so", "that", "you", "can", "tie", "he", "during", "the", "DATE_ATTRS_1", ",", "and", "a", "post", "to", "tie", "he", "to", ".", "''"]
+# ::pos_tags ["CC", "IN", "PRP", "VBP", "JJ", "PRP", "MD", "VB", "PRP", "DT", "NN", ",", "RB", ",", "IN", "IN", "PRP", "MD", "VB", "PRP", "IN", "DT", "NNP", ",", "CC", "DT", "NN", "TO", "VB", "PRP", "TO", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DATE", "DATE_ATTRS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {"DATE_ATTRS_1": {"type": "date-entity", "span": "day", "attrs": {}, "edges": {"dayperiod": "day"}}}
+# ::save-date Mon Feb 29, 2016 ::file lpp_1943_135.txt
+(a / and
+      :op2 (g / give
+            :ARG0 (i / i)
+            :ARG1 (a2 / and
+                  :op1 (s / string
+                        :ARG3-of (t / tie-01
+                              :ARG0 (y / you)
+                              :ARG1 (h / he)
+                              :time (d / DATE_ATTRS_1)))
+                  :op2 (p2 / post
+                        :purpose (t3 / tie-01
+                              :ARG0 y
+                              :ARG1 h)))
+            :ARG2 y
+            :condition (g2 / good-02
+                  :ARG1 y)))
+
+# ::id lpp_1943.136 ::date 2012-07-31T10:59:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt But the little prince seemed shocked by this offer : " Tie him !
+# ::tokens ["But", "the", "little", "prince", "seemed", "shocked", "by", "this", "offer", ":", "''", "Tie", "him", "!"]
+# ::lemmas ["but", "the", "little", "prince", "seem", "shock", "by", "this", "offer", ":", "''", "tie", "he", "!"]
+# ::pos_tags ["CC", "DT", "JJ", "NN", "VBD", "VBN", "IN", "DT", "NN", ":", "''", "VB", "PRP", "."]
+# ::ner_tags ["O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Jul 29, 2015 ::file lpp_1943_136.txt
+(c / contrast
+      :ARG2 (s / seem
+            :ARG1 (s2 / shock
+                  :ARG0 (o / offer
+                        :mod (t / this))
+                  :ARG1 (p / prince
+                        :ARG0-of (s3 / say
+                              :ARG1 (t2 / tie-01
+                                    :ARG0 p
+                                    :ARG1 (h / he)
+                                    :mode imperative))
+                        :mod (l / little)))))
+
+# ::id lpp_1943.137 ::date 2012-07-31T11:04:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt What a queer idea ! "
+# ::tokens ["What", "a", "queer", "idea", "!", "''"]
+# ::lemmas ["what", "a", "queer", "idea", "!", "''"]
+# ::pos_tags ["WP", "DT", "NN", "NN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_137.txt
+(q / queer
+      :domain (i / idea))
+
+# ::id lpp_1943.138 ::date 2012-07-31T11:04:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But if you do n't tie him , "
+# ::tokens ["''", "But", "if", "you", "do", "n't", "tie", "him", ",", "''"]
+# ::lemmas ["''", "but", "if", "you", "do", "not", "tie", "he", ",", "''"]
+# ::pos_tags ["''", "CC", "IN", "PRP", "VBP", "RB", "VB", "PRP", ",", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_138.txt
+(c / contrast
+      :ARG2 (t / tie-01
+            :ARG0 (y / you)
+            :ARG1 (h / he)
+            :condition-of (t2 / thing)))
+
+# ::id lpp_1943.139 ::date 2012-07-31T11:06:51 ::annotator ISI-AMR-05 ::preferred
+# ::snt I said , " he will wander off somewhere , and get lost . "
+# ::tokens ["I", "said", ",", "''", "he", "will", "wander", "off", "somewhere", ",", "and", "get", "lost", ".", "''"]
+# ::lemmas ["I", "say", ",", "''", "he", "will", "wander", "off", "somewhere", ",", "and", "get", "lose", ".", "''"]
+# ::pos_tags ["PRP", "VBD", ",", "''", "PRP", "MD", "VB", "RP", "RB", ",", "CC", "VB", "VBN", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_139.txt
+(s / say
+      :ARG0 (i / i)
+      :ARG1 (a / and
+            :op1 (w / wander
+                  :ARG0 (h / he)
+                  :ARG1 (s2 / somewhere))
+            :op2 (g / get-03
+                  :ARG1 h
+                  :ARG2 (l / lost))))
+
+# ::id lpp_1943.140 ::date 2012-07-31T11:08:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt My friend broke into another peal of laughter : " But where do you think he would go ? "
+# ::tokens ["My", "friend", "broke", "into", "another", "peal", "of", "laughter", ":", "''", "But", "where", "do", "you", "think", "he", "would", "go", "?", "''"]
+# ::lemmas ["my", "friend", "break", "into", "another", "peal", "of", "laughter", ":", "''", "but", "where", "do", "you", "think", "he", "would", "go", "?", "''"]
+# ::pos_tags ["PRP$", "NN", "VBD", "IN", "DT", "NN", "IN", "NN", ":", "''", "CC", "WRB", "VBP", "PRP", "VB", "PRP", "MD", "VB", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_140.txt
+(b / break-in-17
+      :ARG0 (p2 / person
+            :ARG0-of (h2 / have-rel-role
+                  :ARG1 (i / i)
+                  :ARG2 (f / friend))
+            :ARG0-of (s / say
+                  :ARG1 (c / contrast
+                        :ARG2 (t / think
+                              :ARG0 (y / you)
+                              :ARG1 (g / go
+                                    :ARG0 (h / he)
+                                    :ARG4 (a2 / amr-unknown))))))
+      :ARG1 (l / laugh
+            :quant (p / peal
+                  :mod (a / another))))
+
+# ::id lpp_1943.141 ::date 2012-07-31T11:14:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Anywhere .
+# ::tokens ["''", "Anywhere", "."]
+# ::lemmas ["''", "anywhere", "."]
+# ::pos_tags ["''", "RB", "."]
+# ::ner_tags ["O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_141.txt
+(a / anywhere)
+
+# ::id lpp_1943.142 ::date 2012-07-31T11:14:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt Straight ahead of him . "
+# ::tokens ["Straight", "ahead", "of", "him", ".", "''"]
+# ::lemmas ["straight", "ahead", "of", "he", ".", "''"]
+# ::pos_tags ["JJ", "RB", "IN", "PRP", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Mon Jul 20, 2015 ::file lpp_1943_142.txt
+(a / ahead
+      :ARG1-of (s / straight-04)
+      :compared-to (h / he))
+
+# ::id lpp_1943.143 ::date 2012-07-31T11:15:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then the little prince said , earnestly : " That does n't matter .
+# ::tokens ["Then", "the", "little", "prince", "said", ",", "earnestly", ":", "''", "That", "does", "n't", "matter", "."]
+# ::lemmas ["then", "the", "little", "prince", "say", ",", "earnestly", ":", "''", "that", "do", "not", "matter", "."]
+# ::pos_tags ["RB", "DT", "JJ", "NN", "VBD", ",", "RB", ":", "''", "DT", "VBZ", "RB", "VB", "."]
+# ::ner_tags ["O", "O", "O", "TITLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_143.txt
+(s / say
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (m / matter-01
+            :ARG1 (t2 / that))
+      :manner (e / earnest)
+      :time (t / then))
+
+# ::id lpp_1943.144 ::date 2012-07-31T11:16:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt Where I live , everything is so small ! "
+# ::tokens ["Where", "I", "live", ",", "everything", "is", "so", "small", "!", "''"]
+# ::lemmas ["where", "I", "live", ",", "everything", "be", "so", "small", "!", "''"]
+# ::pos_tags ["WRB", "PRP", "VBP", ",", "NN", "VBZ", "RB", "JJ", ".", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_144.txt
+(s / small
+      :degree (s2 / so)
+      :domain (e / everything
+            :location (l / live-01
+                  :ARG0 (i / i))))
+
+# ::id lpp_1943.145 ::date 2012-07-31T11:17:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt And , with perhaps a hint of sadness , he added : " Straight ahead of him , nobody can go very far ... "
+# ::tokens ["And", ",", "with", "perhaps", "a", "hint", "of", "sadness", ",", "he", "added", ":", "''", "Straight", "ahead", "of", "him", ",", "nobody", "can", "go", "very", "far", "...", "''"]
+# ::lemmas ["and", ",", "with", "perhaps", "a", "hint", "of", "sadness", ",", "he", "add", ":", "''", "Straight", "ahead", "of", "he", ",", "nobody", "can", "go", "very", "far", "...", "''"]
+# ::pos_tags ["CC", ",", "IN", "RB", "DT", "NN", "IN", "NN", ",", "PRP", "VBD", ":", "''", "NNP", "RB", "IN", "PRP", ",", "NN", "MD", "VB", "RB", "RB", ":", "''"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::abstract_map {}
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_145.txt
+(a / and
+      :op2 (a2 / add-01
+            :ARG0 (h / he)
+            :ARG1 (g / go
+                  :ARG0 (s2 / somebody)
+                  :ARG4 (f / far
+                        :degree (v / very))
+                  :direction (a3 / ahead
+                        :ARG1-of (s3 / straight-04)
+                        :compared-to s2))
+            :manner (s / sad
+                  :ARG1-of (p / possible)
+                  :quant (h2 / hint))))
+

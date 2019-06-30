@@ -171,11 +171,12 @@ environment:
   torch_seed: 1
   serialization_dir: &serialization_dir ckpt-amr-2.0
   file_friendly_logging: False
-  gpu: True
+  gpu: False
   cuda_device: 0
 
 trainer:
   device:
+  cuda_device: -1
   no_grad: []
   optimizer_type: adam
   learning_rate: 0.001

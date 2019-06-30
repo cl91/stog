@@ -193,6 +193,8 @@ class AMRNode:
         return copy
 
     def remove_attribute(self, attr, value):
+        if (attr, value) not in self.attributes:
+            return
         self.attributes.remove((attr, value))
 
     def add_attribute(self, attr, value):
@@ -370,6 +372,8 @@ class AMRGraph(penman.Graph):
         return node
 
     def remove_node(self, node):
+        if node not in self._G:
+            return
         self._G.remove_node(node)
         triples = [t for t in self._triples if t.source != node.identifier]
         self._update_penman_graph(triples)
